@@ -9,34 +9,42 @@ import { roman } from '@/lib/site'
 import type { Entry, Season, Week } from '@/lib/types'
 
 export function Landing({ season, sample, weeks, today }: { season: Season; sample: Entry | null; weeks: Week[]; today: string }) {
+  const total = daysBetween(season.startDate, season.endDate) + 1
+  const dayWords = ({ 26: 'Twenty-six', 27: 'Twenty-seven' } as Record<number, string>)[total] ?? String(total)
   const stanza = sample ? pickStanzas(sample.hymn.stanzas, sample.featuredStanzas).slice(0, 1) : []
   const meta = sample ? [sample.hymn.tune, sample.hymn.meter, sample.hymn.textAuthor?.replace(/;.*$/, '')].filter(Boolean).join(' · ') : ''
   return (
-    <div className="wide flex flex-col gap-16 pb-4 pt-10 sm:pt-16">
+    <div className="flex flex-col">
+      {/* Launch countdown: the first thing a visitor sees. */}
+      <section aria-labelledby="countdown-heading" className="border-b border-rule bg-paper-raised">
+        <div className="wide flex flex-col items-center gap-7 py-12 text-center sm:gap-9 sm:py-20">
+          <p className="label label-rubric">A hymn a day · Advent {roman(season.year)}</p>
+          <h1 id="countdown-heading" className="text-[30px] font-medium italic leading-tight sm:text-[44px]">
+            Journey to Advent begins in
+          </h1>
+          <Countdown startDate={season.startDate} initialDays={Math.max(0, daysBetween(today, season.startDate) - 1)} />
+          <p className="text-[18px] text-ink-muted sm:text-[20px]">
+            {formatLong(season.startDate)}, at midnight Central time
+          </p>
+          <div className="flex w-full max-w-[560px] flex-col gap-3 text-left">
+            <p className="text-center text-[19px] italic">Get Day 1 in your inbox at 5:00 that morning.</p>
+            <SubscribeForm tone="light" source="landing-hero" />
+          </div>
+        </div>
+      </section>
+
+      <div className="wide flex flex-col gap-16 pb-4 pt-12 sm:pt-16">
       <div className="grid gap-12 lg:grid-cols-[1fr_440px] lg:gap-[72px]">
         <div className="flex flex-col gap-9">
           <div className="flex flex-col gap-1">
-            <h1 className="sr-only">Journey to Advent</h1>
             <Wordmark size="lg" />
             <div className="mt-[18px] flex items-center gap-3.5">
               <div className="h-0.5 w-12 bg-rubric" />
-              <p className="label text-[15px]! sm:text-[17px]!">A hymn a day · Advent {roman(season.year)}</p>
+              <p className="label text-[15px]! sm:text-[17px]!">{dayWords} days · {dayWords} hymns</p>
             </div>
           </div>
 
-          <section aria-labelledby="countdown-heading" className="flex flex-col gap-4">
-            <h2 id="countdown-heading" className="label label-rubric">
-              Advent begins {formatLong(season.startDate)}
-            </h2>
-            <Countdown startDate={season.startDate} initialDays={Math.max(0, daysBetween(today, season.startDate) - 1)} />
-          </section>
-
           <RichText value={season.intro} className="reading max-w-[560px]" />
-
-          <div className="flex max-w-[560px] flex-col gap-3">
-            <p className="text-[21px] italic">Get each day by email at five in the morning.</p>
-            <SubscribeForm tone="light" source="landing" />
-          </div>
         </div>
 
         {sample && (
@@ -76,6 +84,7 @@ export function Landing({ season, sample, weeks, today }: { season: Season; samp
           </p>
         </section>
       )}
+      </div>
     </div>
   )
 }
