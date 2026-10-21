@@ -5,12 +5,12 @@ import { Stanzas, pickStanzas } from './Stanzas'
 import { SubscribeForm } from './SubscribeForm'
 import { Wordmark } from './Wordmark'
 import { daysBetween, formatLong, formatMonthDay } from '@/lib/date'
-import { roman } from '@/lib/site'
+import { paragraphsToBlocks } from '@/lib/portable-text'
+import { homeIntro, homeTagline, roman } from '@/lib/site'
 import type { Entry, Season, Week } from '@/lib/types'
 
 export function Landing({ season, sample, weeks, today }: { season: Season; sample: Entry | null; weeks: Week[]; today: string }) {
-  const total = daysBetween(season.startDate, season.endDate) + 1
-  const dayWords = ({ 26: 'Twenty-six', 27: 'Twenty-seven' } as Record<number, string>)[total] ?? String(total)
+  const intro = season.intro?.length ? season.intro : paragraphsToBlocks(homeIntro, 'intro')
   const stanza = sample ? pickStanzas(sample.hymn.stanzas, sample.featuredStanzas).slice(0, 1) : []
   const meta = sample ? [sample.hymn.tune, sample.hymn.meter, sample.hymn.textAuthor?.replace(/;.*$/, '')].filter(Boolean).join(' · ') : ''
   return (
@@ -40,11 +40,11 @@ export function Landing({ season, sample, weeks, today }: { season: Season; samp
             <Wordmark size="lg" />
             <div className="mt-[18px] flex items-center gap-3.5">
               <div className="h-0.5 w-12 bg-rubric" />
-              <p className="label text-[15px]! sm:text-[17px]!">{dayWords} days · {dayWords} hymns</p>
+              <p className="text-[19px] italic sm:text-[22px]">{homeTagline}</p>
             </div>
           </div>
 
-          <RichText value={season.intro} className="reading max-w-[560px]" />
+          <RichText value={intro} className="reading max-w-[560px]" />
         </div>
 
         {sample && (
