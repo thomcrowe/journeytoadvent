@@ -4,11 +4,11 @@ import { RichText } from './RichText'
 import { Stanzas, pickStanzas } from './Stanzas'
 import { SubscribeForm } from './SubscribeForm'
 import { Wordmark } from './Wordmark'
-import { formatLong, formatMonthDay } from '@/lib/date'
+import { daysBetween, formatLong, formatMonthDay } from '@/lib/date'
 import { roman } from '@/lib/site'
 import type { Entry, Season, Week } from '@/lib/types'
 
-export function Landing({ season, sample, weeks }: { season: Season; sample: Entry | null; weeks: Week[] }) {
+export function Landing({ season, sample, weeks, today }: { season: Season; sample: Entry | null; weeks: Week[]; today: string }) {
   const stanza = sample ? pickStanzas(sample.hymn.stanzas, sample.featuredStanzas).slice(0, 1) : []
   const meta = sample ? [sample.hymn.tune, sample.hymn.meter, sample.hymn.textAuthor?.replace(/;.*$/, '')].filter(Boolean).join(' · ') : ''
   return (
@@ -24,12 +24,14 @@ export function Landing({ season, sample, weeks }: { season: Season; sample: Ent
             </div>
           </div>
 
-          <RichText value={season.intro} className="reading max-w-[560px]" />
+          <section aria-labelledby="countdown-heading" className="flex flex-col gap-4">
+            <h2 id="countdown-heading" className="label label-rubric">
+              Advent begins {formatLong(season.startDate)}
+            </h2>
+            <Countdown startDate={season.startDate} initialDays={Math.max(0, daysBetween(today, season.startDate) - 1)} />
+          </section>
 
-          <div className="flex flex-col gap-4">
-            <p className="label label-rubric">Begins {formatLong(season.startDate)}</p>
-            <Countdown startDate={season.startDate} />
-          </div>
+          <RichText value={season.intro} className="reading max-w-[560px]" />
 
           <div className="flex max-w-[560px] flex-col gap-3">
             <p className="text-[21px] italic">Get each day by email at five in the morning.</p>

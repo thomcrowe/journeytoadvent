@@ -4,7 +4,7 @@ import { ListenBar } from './ListenBar'
 import { RichText } from './RichText'
 import { ShareButton } from './ShareButton'
 import { Stanzas, pickStanzas } from './Stanzas'
-import { TrackOnMount, TrackedLink } from './Track'
+import { TrackOnMount, TrackWhenVisible, TrackedLink } from './Track'
 import { formatLong, isReleased } from '@/lib/date'
 import { bibleUrl, dayPath, formatDuration } from '@/lib/site'
 import type { Entry, EntrySummary, HymnRef, Week } from '@/lib/types'
@@ -165,6 +165,9 @@ export function DayEntry({
           </p>
         </section>
       )}
+
+      {/* Reaching the prayer counts as finishing the day. */}
+      <TrackWhenVisible event="entry_finished" properties={{ dayNumber: entry.dayNumber, hymn: hymn.title, year: entry.year }} />
 
       <div className="flex justify-end">
         <ShareButton title={`Day ${entry.dayNumber}: ${hymn.title}`} path={path} dayNumber={entry.dayNumber} />

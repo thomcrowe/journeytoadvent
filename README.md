@@ -67,8 +67,19 @@ curl -H "Authorization: Bearer $CRON_SECRET" "https://journeytoadvent.com/api/cr
 2. `vercel.json` defines both crons. Set `CRON_SECRET`; Vercel sends it automatically.
 3. Set `RELEASE_DATE_OVERRIDE` only on Preview deployments, never Production (it's ignored there anyway).
 
-### 4. PostHog
-Set `NEXT_PUBLIC_POSTHOG_KEY` (and host). Events: `entry_viewed`, `recording_played`, `subscribe_submitted`, `subscribe_confirmed`, `share_clicked`, `next_day_clicked`. Do Not Track is respected; session recording and autocapture are off.
+### 4. PostHog (analytics)
+Set `NEXT_PUBLIC_POSTHOG_KEY` (and `NEXT_PUBLIC_POSTHOG_HOST` if your project is in the EU: `https://eu.i.posthog.com`), then redeploy. Open **Web analytics** in PostHog for a Google Analytics-style dashboard: visitors, page views, sessions, time on page, bounce rate, top pages, referrers, UTM campaigns, devices, and countries.
+
+What's captured:
+- Page views and page leaves (time on page, bounce rate, scroll depth)
+- Clicks on links and buttons (nothing typed into forms)
+- `entry_viewed`, `entry_finished` (reader reached the prayer), `recording_played`, `share_clicked`, `next_day_clicked`, `subscribe_submitted`, `subscribe_confirmed`
+
+Events go through `/ingest` on this domain (a rewrite in `next.config.ts`) so ad blockers don't drop them. Do Not Track is respected; session recording is off. PostHog ignores automated browsers, so test with a real one: open the site, then check **Activity** in PostHog for a `$pageview`.
+
+## Checking the setup
+
+Visit **`/api/status`** on any deployment. It shows yes/no for each service (Sanity, PostHog, Resend, cron), how many seasons, entries, and hymns Sanity has, and which date the site thinks it is. It never shows secret values. Environment variable changes in Vercel need a redeploy before they show up.
 
 ## Content
 
