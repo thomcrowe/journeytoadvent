@@ -5,6 +5,9 @@ const posthogHost = (process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posth
 const posthogAssets = posthogHost.replace('.i.posthog.com', '-assets.i.posthog.com')
 
 const nextConfig: NextConfig = {
+  // PREVIEW BRANCH ONLY: show the site as it will look on launch day. Never merge.
+  // lib/date.ts ignores this on the production deployment.
+  env: { RELEASE_DATE_OVERRIDE: '2026-11-29' },
   skipTrailingSlashRedirect: true,
   async rewrites() {
     return [
