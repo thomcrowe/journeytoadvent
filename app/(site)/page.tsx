@@ -4,11 +4,19 @@ import { Landing } from '@/components/Landing'
 import { SeasonCalendar } from '@/components/SeasonCalendar'
 import { getCurrentSeason, getEntry, getEntrySummaries, getSeason, getToday, isDraftMode } from '@/lib/content'
 import { daysBetween } from '@/lib/date'
+import { fallback } from '@/lib/fallback-data'
 import { loadDay, seasonPhase, totalDays } from '@/lib/season'
 
 export default async function Home() {
   const [current, today, draft] = await Promise.all([getCurrentSeason(), getToday(), isDraftMode()])
   if (!current) {
+    // No season published in the CMS yet. Before launch, still show the
+    // countdown using the season dates from the built-in lineup.
+    const planned = fallback()
+    const season = planned.seasons[0]
+    if (season && seasonPhase(season, today) === 'before') {
+      return <Landing season={season} sample={null} weeks={planned.weeks} today={today} />
+    }
     return (
       <div className="measure py-20">
         <p className="reading">Journey to Advent is being prepared. Please check back soon.</p>
