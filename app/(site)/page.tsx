@@ -20,7 +20,7 @@ export default async function Home() {
 
   if (phase === 'before') {
     const sample = await getEntry(season.year, 1)
-    return <Landing season={season} sample={sample} weeks={season.weeks} />
+    return <Landing season={season} sample={sample} weeks={season.weeks} today={today} />
   }
 
   if (phase === 'after') {

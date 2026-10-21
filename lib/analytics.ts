@@ -5,6 +5,7 @@ export type AnalyticsEvent =
   | 'subscribe_confirmed'
   | 'share_clicked'
   | 'next_day_clicked'
+  | 'entry_finished'
 
 type Capture = (event: string, properties?: Record<string, unknown>) => void
 
