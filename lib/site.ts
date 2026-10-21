@@ -8,6 +8,13 @@ export const site = {
   byline: 'Written by the Rev. Thom Crowe',
 }
 
+/** Home page welcome, shown under the wordmark. Used when the season in Sanity has no welcome text of its own. */
+export const homeTagline = 'Pray the hymns of the Church this Advent.'
+export const homeIntro = [
+  'For twenty-six days, starting on the First Sunday of Advent and going through Christmas Eve, we’ll look at a hymn as we prepare to celebrate the birth of Christ. Join me in reading the Scriptures, reflecting, and a learning from the Christian tradition. Each day you’ll be given a question to focus on throughout the day, and close with the collect for the week.',
+  'It takes about ten minutes. Feel free to sing if you like, I know I will.',
+]
+
 export function absoluteUrl(path: string) {
   return `${site.url}${path.startsWith('/') ? path : `/${path}`}`
 }

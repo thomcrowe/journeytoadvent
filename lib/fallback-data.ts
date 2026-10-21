@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { DAYS, EMMANUEL, HYMNS, SEASON_2026, WEEKS, ids, slugify, weekForDay } from '@/content/lineup'
 import { parseWeekMarkdown, type ParsedDay } from './parse-seed'
 import { paragraphsToBlocks } from './portable-text'
+import { homeIntro } from './site'
 import type { Entry, Hymn, Season, Week } from './types'
 
 // Sample content used when NEXT_PUBLIC_SANITY_PROJECT_ID is not set. Built from
@@ -35,10 +36,7 @@ function build() {
     title: SEASON_2026.title,
     startDate: SEASON_2026.startDate,
     endDate: SEASON_2026.endDate,
-    intro: paragraphsToBlocks([
-      'For twenty-six mornings, from the First Sunday of Advent to Christmas Eve, open one hymn. Read a short passage of Scripture, a brief reflection, and a word from the Christian tradition. Carry one question through the day, and close with the collect for the week.',
-      'It takes about ten minutes. Sing if you like.',
-    ], 'intro'),
+    intro: paragraphsToBlocks(homeIntro, 'intro'),
   }
 
   const hymns = new Map<string, Hymn>()
