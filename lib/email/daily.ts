@@ -1,5 +1,5 @@
 import 'server-only'
-import { render } from '@react-email/components'
+import { render } from 'react-email'
 import DailyEmail, { type DailyEmailProps } from '@/emails/DailyEmail'
 import { attribution } from '@/components/DayEntry'
 import { pickStanzas } from '@/components/Stanzas'

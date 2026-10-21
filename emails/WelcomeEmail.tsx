@@ -1,4 +1,4 @@
-import { Link, Text } from '@react-email/components'
+import { Link, Text } from 'react-email'
 import { Shell } from './Shell'
 import { s } from './theme'
 

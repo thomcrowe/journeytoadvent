@@ -1,4 +1,4 @@
-import { render } from '@react-email/components'
+import { render } from 'react-email'
 import WelcomeEmail from '@/emails/WelcomeEmail'
 import { getCurrentSeason } from '@/lib/content'
 import { daysBetween, formatLong, releaseDate } from '@/lib/date'

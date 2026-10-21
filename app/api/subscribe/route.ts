@@ -1,4 +1,4 @@
-import { render } from '@react-email/components'
+import { render } from 'react-email'
 import ConfirmEmail from '@/emails/ConfirmEmail'
 import { createToken } from '@/lib/email/token'
 import { emailFrom, resend } from '@/lib/email/resend'

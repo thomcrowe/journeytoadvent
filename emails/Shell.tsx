@@ -1,4 +1,4 @@
-import { Body, Container, Head, Hr, Html, Link, Preview, Section, Text } from '@react-email/components'
+import { Body, Container, Head, Hr, Html, Link, Preview, Section, Text } from 'react-email'
 import { c, s } from './theme'
 
 export function Shell({ preview, children, siteUrl, unsubscribe = false }: { preview: string; children: React.ReactNode; siteUrl: string; unsubscribe?: boolean }) {
