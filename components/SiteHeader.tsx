@@ -13,11 +13,15 @@ export function SiteHeader({ year, totalDays, subscribeHref = "#subscribe" }: { 
       <a href="#main" className="sr-only-focusable absolute left-4 top-2 z-10 bg-paper px-3 py-2">
         Skip to content
       </a>
-      <div className="wide flex flex-wrap items-center justify-between gap-x-8 gap-y-4 py-4 sm:py-5">
+      {/* Option C · Title page: name centered, nav on a ruled line beneath */}
+      <div className="wide flex flex-col items-center gap-3 pb-3 pt-5 sm:pt-6">
         <Wordmark />
-        <nav aria-label="Main" className="flex flex-wrap items-center gap-x-5 gap-y-2 font-sans text-[15px] font-medium sm:gap-x-7">
+        <nav
+          aria-label="Main"
+          className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 border-t border-rule pt-2.5 text-[13px] uppercase tracking-[0.16em] sm:gap-x-7 sm:text-[15px]"
+        >
           <NavLinks links={links} />
-          <a href={subscribeHref} className="btn-rubric rounded-[4px] px-4 py-2 text-[14px] tracking-normal normal-case">
+          <a href={subscribeHref} className="text-rubric no-underline hover:text-rubric-hover">
             Subscribe
           </a>
         </nav>

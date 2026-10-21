@@ -11,15 +11,13 @@ export function Wordmark({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
       </div>
     )
   }
+  // Title-page wordmark: small spaced caps over large capitals, centered.
   return (
-    <Link href="/" className="flex items-center gap-2.5 font-sans text-[19px] font-semibold tracking-[-0.01em] text-ink no-underline hover:text-ink sm:text-[21px]">
-      <span
-        aria-hidden="true"
-        className="inline-flex size-[28px] items-center justify-center rounded-[4px] bg-rubric text-[17px] font-bold leading-none text-paper sm:size-[30px] sm:text-[18px]"
-      >
-        J
+    <Link href="/" className="flex flex-col items-center text-ink no-underline hover:text-ink">
+      <span className="text-[11px] uppercase tracking-[0.42em] text-ink-muted sm:text-[13px]">Journey to</span>
+      <span className="text-[30px] font-medium uppercase leading-[1.1] tracking-[0.14em] sm:text-[40px]">
+        <span className="text-rubric">A</span>dvent
       </span>
-      Journey to Advent
     </Link>
   )
 }
