@@ -12,15 +12,15 @@
   },
   "dependencies": {
     "@portabletext/react": "^8.0.1",
-    "@react-email/components": "^1.0.12",
     "@sanity/client": "^8.10.0",
     "@sanity/image-url": "^2.1.1",
     "@sanity/vision": "^6.20.0",
     "next": "16.4.2",
     "next-sanity": "^13.3.4",
     "posthog-js": "^1.438.13",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-email": "^6.11.3",
     "resend": "^6.34.1",
     "sanity": "^6.20.0",
     "styled-components": "^6.6.0"
@@ -31,10 +31,29 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
+    "eslint": "^10",
     "eslint-config-next": "16.4.2",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5"
+  },
+  "overrides": {
+    "typeid-js": {
+      "uuid": "^11.1.1"
+    },
+    "eslint-plugin-import": {
+      "eslint": "$eslint"
+    },
+    "eslint-plugin-jsx-a11y": {
+      "eslint": "$eslint"
+    },
+    "eslint-plugin-react": {
+      "eslint": "$eslint"
+    }
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "unrs-resolver": true,
+    "core-js": false
   }
 }

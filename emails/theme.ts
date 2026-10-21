@@ -19,7 +19,7 @@ export const s = {
   h1: { fontSize: '34px', lineHeight: '1.1', fontWeight: 500, margin: '0 0 8px', color: c.ink, fontFamily: font },
   text: { fontSize: '19px', lineHeight: '1.6', margin: '0 0 16px', color: c.ink, fontFamily: font },
   muted: { fontSize: '16px', lineHeight: '1.5', color: c.muted, margin: '0 0 16px', fontFamily: font },
-  hr: { borderColor: c.rule, borderTopWidth: '1px', margin: '24px 0' },
+  hr: { borderTop: `1px solid ${c.rule}`, margin: '24px 0' },
   button: { backgroundColor: c.rubric, color: c.paper, padding: '12px 20px', fontSize: '15px', letterSpacing: '0.1em', textTransform: 'uppercase' as const, textDecoration: 'none', fontFamily: font },
   link: { color: c.rubric },
 }

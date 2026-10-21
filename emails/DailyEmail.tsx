@@ -1,4 +1,4 @@
-import { Button, Link, Section, Text } from '@react-email/components'
+import { Button, Link, Section, Text } from 'react-email'
 import { Shell } from './Shell'
 import { c, font, s } from './theme'
 
