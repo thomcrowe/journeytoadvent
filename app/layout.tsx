@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { EB_Garamond } from 'next/font/google'
+import { EB_Garamond, Inter } from 'next/font/google'
 import { site } from '@/lib/site'
 import './globals.css'
 
@@ -8,6 +8,14 @@ const garamond = EB_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
   style: ['normal', 'italic'],
+  display: 'swap',
+})
+
+// Header only (wordmark and nav). Reading text stays in EB Garamond.
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
 })
 
@@ -28,7 +36,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={garamond.variable}>
+    <html lang="en" className={`${garamond.variable} ${inter.variable}`}>
       <body className="min-h-dvh antialiased">{children}</body>
     </html>
   )

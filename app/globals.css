@@ -29,6 +29,7 @@
   --color-flame: var(--flame);
   --color-rule: var(--rule);
   --font-serif: var(--font-garamond), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 html {

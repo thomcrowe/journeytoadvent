@@ -12,11 +12,14 @@ export function Wordmark({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
     )
   }
   return (
-    <Link href="/" className="flex items-baseline gap-2.5 text-ink no-underline hover:text-ink">
-      <span className="text-[13px] uppercase tracking-[0.28em] sm:text-[14px]">Journey to</span>
-      <span className="text-[28px] italic leading-none sm:text-[30px]">
-        <span className="text-rubric">A</span>dvent
+    <Link href="/" className="flex items-center gap-2.5 font-sans text-[19px] font-semibold tracking-[-0.01em] text-ink no-underline hover:text-ink sm:text-[21px]">
+      <span
+        aria-hidden="true"
+        className="inline-flex size-[28px] items-center justify-center rounded-[4px] bg-rubric text-[17px] font-bold leading-none text-paper sm:size-[30px] sm:text-[18px]"
+      >
+        J
       </span>
+      Journey to Advent
     </Link>
   )
 }
