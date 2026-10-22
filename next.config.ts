@@ -23,9 +23,9 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  // Files read from disk at runtime: OG fonts and the fallback seed Markdown.
+  // Files read from disk at runtime: OG fonts.
   outputFileTracingIncludes: {
-    '/**': ['./assets/fonts/**', './content/seed/**'],
+    '/**': ['./assets/fonts/**'],
   },
   async headers() {
     return [{ source: '/studio/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex' }] }]

@@ -8,6 +8,7 @@ import { apiVersion, dataset, projectId, studioUrl } from './sanity/env'
 import { schemaTypes } from './sanity/schemaTypes'
 import { structure } from './sanity/structure'
 import { resolve } from './sanity/presentation'
+import { loadContentTool } from './sanity/load-content-tool'
 
 export default defineConfig({
   name: 'journey-to-advent',
@@ -36,4 +37,5 @@ export default defineConfig({
     }),
     visionTool({ defaultApiVersion: apiVersion }),
   ],
+  tools: (prev) => [...prev, loadContentTool],
 })

@@ -12,7 +12,7 @@ cp .env.example .env.local   # fill in what you have; everything is optional loc
 npm run dev                  # http://localhost:3000
 ```
 
-With no Sanity project ID, the site runs on built-in sample content (the season lineup plus whatever is in `content/seed/*.md`), so you can work on the design before the CMS exists.
+With no Sanity project ID, the site runs on built-in sample content (the season lineup plus the written weeks in `content/seed/`), so you can work on the design before the CMS exists.
 
 **Time travel:** set `RELEASE_DATE_OVERRIDE=2026-12-17` to see the site as it will look on that date. It is ignored in production.
 
@@ -38,7 +38,7 @@ With no Sanity project ID, the site runs on built-in sample content (the season 
 1. Create a project at sanity.io/manage (free tier). Note the project ID; dataset `production`.
 2. Add `http://localhost:3000` and `https://journeytoadvent.com` under **API → CORS origins** (allow credentials).
 3. Create two tokens under **API → Tokens**: a *Viewer* token (`SANITY_API_READ_TOKEN`) and an *Editor* token (`SANITY_API_WRITE_TOKEN`).
-4. Run `npm run seed`. Open `/studio`: Seasons → 2026 → Weeks / All entries, plus Hymns.
+4. Open `/studio` → **Load content** and press the button (or run `npm run seed` with a write token). Then Structure → Seasons → 2026 → Weeks / All entries, plus Hymns.
 5. Create a **GROQ webhook** (API → Webhooks):
    - URL: `https://journeytoadvent.com/api/revalidate`
    - Dataset: `production`; Trigger on create, update, delete
@@ -84,7 +84,7 @@ Visit **`/api/status`** on any deployment. It shows yes/no for each service (San
 ## Content
 
 - **Lineup and metadata:** `content/lineup.ts` (hymns, tunes, weeks, BCP 1979 collects, O Antiphons). Verify every hymn's text and attribution against Hymnary.org.
-- **Seeding from Markdown:** drop week files into `content/seed/` (`week-1.md` is a sample using Day 1 from the mockup). Format: `## Day N · Weekday, Month D`, `### Hymn Title`, a blockquote of stanzas (blank `>` line between stanzas, `**1**` numbers, `— attribution`), then `**Read:**`, `**Reflect**`, `**From the tradition**`, `**Carry this:**`, `**Pray:**`. Re-running is safe.
+- **Seeding from Markdown:** each written week is a Markdown string in `content/seed/week-N.ts`, listed in `content/seed/index.ts` (`week-1.ts` holds Days 1–7). The Studio's **Load content** tool only fills empty fields; `npm run seed` overwrites them. Format: `## Day N · Weekday, Month D`, `### Hymn Title`, a blockquote of stanzas (blank `>` line between stanzas, `**1**` numbers, `— attribution`), then `**Read:**`, `**Reflect**`, `**From the tradition**`, `**Carry this:**`, `**Pray:**`. Re-running is safe.
 - **Stanzas:** one line of verse per line; wrap a line in `*asterisks*` to set it in italic; mark a stanza as a refrain to italicize it.
 - **Recordings:** YouTube video ID on the hymn (or per-day override). Nothing loads from YouTube until the reader presses play.
 - **Copyright:** public-domain texts only (US: before 1929). *People, Look East* is US-only: one stanza at most. Scripture on the page is KJV; the link goes to the NRSV at Oremus.
