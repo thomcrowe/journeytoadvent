@@ -1,14 +1,13 @@
 import 'server-only'
-import { readFileSync, readdirSync } from 'node:fs'
-import { join } from 'node:path'
 import { DAYS, EMMANUEL, HYMNS, SEASON_2026, WEEKS, ids, slugify, weekForDay } from '@/content/lineup'
+import { seedWeeks } from '@/content/seed'
 import { parseWeekMarkdown, type ParsedDay } from './parse-seed'
 import { paragraphsToBlocks } from './portable-text'
 import { homeIntro } from './site'
 import type { Entry, Hymn, Season, Week } from './types'
 
 // Sample content used when NEXT_PUBLIC_SANITY_PROJECT_ID is not set. Built from
-// the season lineup plus any Markdown in content/seed/.
+// the season lineup plus the Markdown weeks in content/seed/.
 
 const LO_HE_COMES_STANZAS = [
   { number: 1, lines: 'Lo! he comes with clouds descending,\nonce for favored sinners slain;\nthousand thousand saints attending\nswell the triumph of his train:\n*Alleluia! Alleluia!*\nGod appears on earth to reign.' },
@@ -18,14 +17,7 @@ const LO_HE_COMES_STANZAS = [
 ]
 
 function readSeedDays(): ParsedDay[] {
-  try {
-    const dir = join(process.cwd(), 'content/seed')
-    return readdirSync(dir)
-      .filter((f) => f.endsWith('.md'))
-      .flatMap((f) => parseWeekMarkdown(readFileSync(join(dir, f), 'utf8')))
-  } catch {
-    return []
-  }
+  return seedWeeks.flatMap((w) => parseWeekMarkdown(w.markdown))
 }
 
 function build() {
@@ -39,6 +31,11 @@ function build() {
     intro: paragraphsToBlocks(homeIntro, 'intro'),
   }
 
+  const seededDays = readSeedDays()
+  const seededStanzas = new Map(
+    seededDays.map((d) => [DAYS.find((x) => x.day === d.day)?.hymn, d.stanzas.map((x) => ({ number: x.number, lines: x.lines, refrain: x.refrain }))]),
+  )
+
   const hymns = new Map<string, Hymn>()
   for (const h of HYMNS) {
     const slug = slugify(h.title)
@@ -51,7 +48,7 @@ function build() {
       textYear: h.textYear,
       tune: h.tune,
       meter: h.meter,
-      stanzas: h.title === 'Lo! He Comes with Clouds Descending' ? LO_HE_COMES_STANZAS : [],
+      stanzas: h.title === 'Lo! He Comes with Clouds Descending' ? LO_HE_COMES_STANZAS : (seededStanzas.get(h.title) ?? []),
       copyright: { status: h.copyright ?? 'public-domain-worldwide', notes: h.copyrightNotes },
     })
   }
@@ -64,7 +61,7 @@ function build() {
     collect: w.collect,
   }))
 
-  const seeded = new Map(readSeedDays().map((d) => [d.day, d]))
+  const seeded = new Map(seededDays.map((d) => [d.day, d]))
 
   const entries: Entry[] = DAYS.map((d) => {
     const s = seeded.get(d.day)
