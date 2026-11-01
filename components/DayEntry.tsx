@@ -6,7 +6,7 @@ import { ShareButton } from './ShareButton'
 import { Stanzas, pickStanzas } from './Stanzas'
 import { TrackOnMount, TrackWhenVisible, TrackedLink } from './Track'
 import { formatLong, isReleased } from '@/lib/date'
-import { NRSV_NOTICE, bibleUrl, dayPath, formatDuration } from '@/lib/site'
+import { NRSV_NOTICE, dayPath, formatDuration } from '@/lib/site'
 import type { Entry, EntrySummary, HymnRef, Week } from '@/lib/types'
 
 export function attribution(h: HymnRef) {
@@ -110,16 +110,10 @@ export function DayEntry({
         <div className="flex flex-col gap-3 border-y border-rule py-4">
           <div className="flex items-baseline gap-3.5">
             <h2 className="label">Read</h2>
-            {entry.scriptureText ? (
-              <span className="text-[20px]">
-                {entry.scriptureRef} <span className="text-[16px] text-ink-muted">(NRSV)</span>
-              </span>
-            ) : (
-              <a href={bibleUrl(entry.scriptureRef)} className="text-[20px]" rel="noopener noreferrer">
-                {entry.scriptureRef}
-                <span className="sr-only"> (opens the NRSV at Oremus Bible Browser)</span>
-              </a>
-            )}
+            <span className="text-[20px]">
+              {entry.scriptureRef}
+              {entry.scriptureText && <span className="text-[16px] text-ink-muted"> (NRSV)</span>}
+            </span>
           </div>
           {entry.scriptureText && (
             <blockquote className="flex flex-col gap-3 text-[18px] leading-[1.6] text-ink">

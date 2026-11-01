@@ -6,7 +6,7 @@ import { pickStanzas } from '@/components/Stanzas'
 import { getSeason } from '@/lib/content'
 import { formatLong } from '@/lib/date'
 import { totalDays } from '@/lib/season'
-import { absoluteUrl, bibleUrl, dayPath, site } from '@/lib/site'
+import { absoluteUrl, dayPath, site } from '@/lib/site'
 import type { Blocks, Entry } from '@/lib/types'
 
 function blocksToParagraphs(blocks?: Blocks): string[] {
@@ -39,8 +39,8 @@ export async function buildDailyEmail(entry: Entry) {
       ...pickStanzas(entry.hymn.stanzas, entry.featuredStanzas),
     ],
     scriptureRef: entry.scriptureRef,
-    // With the passage on the page, link readers to the day page instead of another site.
-    scriptureUrl: entry.scriptureText ? url : entry.scriptureRef ? bibleUrl(entry.scriptureRef) : undefined,
+    // The reading lives on the day page, never another site.
+    scriptureUrl: entry.scriptureRef ? url : undefined,
     scriptureText: entry.scriptureText,
     reflection: blocksToParagraphs(entry.reflection),
     quote: entry.traditionQuote,

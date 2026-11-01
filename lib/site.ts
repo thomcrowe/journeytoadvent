@@ -23,12 +23,6 @@ export function absoluteUrl(path: string) {
 export const NRSV_NOTICE =
   'Scripture quotations are from the New Revised Standard Version Bible, copyright © 1989 the National Council of the Churches of Christ in the United States of America. Used by permission. All rights reserved worldwide.'
 
-/** Oremus Bible Browser link (NRSV) for a reference like "Mark 13:24–37". */
-export function bibleUrl(ref: string) {
-  const passage = ref.replace(/[–—]/g, '-').trim()
-  return `https://bible.oremus.org/?version=NRSVAE&passage=${encodeURIComponent(passage)}`
-}
-
 export function dayPath(year: number, day: number) {
   return `/${year}/day/${day}`
 }
