@@ -72,15 +72,8 @@ export default function DailyEmail(p: DailyEmailProps) {
         <Text style={{ ...s.text, borderTop: `1px solid ${c.rule}`, borderBottom: `1px solid ${c.rule}`, padding: '12px 0' }}>
           <span style={{ ...s.label, fontSize: '13px' }}>Read&nbsp;&nbsp;</span>
           {p.scriptureUrl ? <Link href={p.scriptureUrl} style={s.link}>{p.scriptureRef}</Link> : p.scriptureRef}
-          {p.scriptureText ? ' (NRSV)' : ''}
         </Text>
       )}
-      {p.scriptureText &&
-        p.scriptureText.split(/\n\s*\n/).map((para, i) => (
-          <Text key={`scripture-${i}`} style={s.text}>
-            {para.trim()}
-          </Text>
-        ))}
 
       {p.reflection.length > 0 && (
         <>
@@ -121,6 +114,17 @@ export default function DailyEmail(p: DailyEmailProps) {
           <Text style={{ ...s.text, fontStyle: 'italic' }}>
             {p.collect} <span style={{ color: c.rubric, fontStyle: 'normal' }}>Amen.</span>
           </Text>
+        </>
+      )}
+
+      {p.scriptureText && (
+        <>
+          <Text style={{ ...s.label, marginTop: '8px' }}>The reading · {p.scriptureRef}</Text>
+          {p.scriptureText.split(/\n\s*\n/).map((para, i) => (
+            <Text key={`scripture-${i}`} style={s.text}>
+              {para.trim()}
+            </Text>
+          ))}
         </>
       )}
 
