@@ -6,7 +6,7 @@ import { ShareButton } from './ShareButton'
 import { Stanzas, pickStanzas } from './Stanzas'
 import { TrackOnMount, TrackWhenVisible, TrackedLink } from './Track'
 import { formatLong, isReleased } from '@/lib/date'
-import { NRSV_NOTICE, bibleUrl, dayPath, formatDuration } from '@/lib/site'
+import { NRSV_NOTICE, dayPath, formatDuration } from '@/lib/site'
 import type { Entry, EntrySummary, HymnRef, Week } from '@/lib/types'
 
 export function attribution(h: HymnRef) {
@@ -107,29 +107,15 @@ export function DayEntry({
       )}
 
       {entry.scriptureRef && (
-        <div className="flex flex-col gap-3 border-y border-rule py-4">
-          <div className="flex items-baseline gap-3.5">
-            <h2 className="label">Read</h2>
-            {entry.scriptureText ? (
-              <span className="text-[20px]">
-                {entry.scriptureRef} <span className="text-[16px] text-ink-muted">(NRSV)</span>
-              </span>
-            ) : (
-              <a href={bibleUrl(entry.scriptureRef)} className="text-[20px]" rel="noopener noreferrer">
-                {entry.scriptureRef}
-                <span className="sr-only"> (opens the NRSV at Oremus Bible Browser)</span>
-              </a>
-            )}
-          </div>
-          {entry.scriptureText && (
-            <blockquote className="flex flex-col gap-3 text-[18px] leading-[1.6] text-ink">
-              {entry.scriptureText.split(/\n\s*\n/).map((para, i) => (
-                <p key={i}>{para.trim()}</p>
-              ))}
-            </blockquote>
-          )}
-          {entry.scriptureText && (
-            <p className="text-[13px] leading-[1.5] text-ink-muted">{NRSV_NOTICE}</p>
+        <div className="flex items-baseline gap-3.5 border-y border-rule py-4">
+          <h2 className="label">Read</h2>
+          {entry.scriptureText ? (
+            <a href="#reading" className="text-[20px]">
+              {entry.scriptureRef}
+              <span className="sr-only"> (the passage is at the end of this page)</span>
+            </a>
+          ) : (
+            <span className="text-[20px]">{entry.scriptureRef}</span>
           )}
         </div>
       )}
@@ -183,6 +169,23 @@ export function DayEntry({
       <div className="flex justify-end">
         <ShareButton title={`Day ${entry.dayNumber}: ${hymn.title}`} path={path} dayNumber={entry.dayNumber} />
       </div>
+
+      {entry.scriptureText && (
+        <section id="reading" aria-labelledby="reading-heading" className="flex scroll-mt-6 flex-col gap-3 border-t border-rule pt-6">
+          <h2 id="reading-heading" className="label">
+            The reading · {entry.scriptureRef}
+          </h2>
+          <div className="flex flex-col gap-3 text-[17px] leading-[1.6] text-ink">
+            {entry.scriptureText.split(/\n\s*\n/).map((para, i) => (
+              <p key={i}>{para.trim()}</p>
+            ))}
+          </div>
+          <p className="text-[13px] leading-[1.5] text-ink-muted">{NRSV_NOTICE}</p>
+          <p className="text-[16px]">
+            <a href="#reflect-heading">↑ Return to the reflection</a>
+          </p>
+        </section>
+      )}
 
       <nav aria-label="Day navigation" className="flex flex-wrap justify-between gap-4 border-t border-rule pt-6 text-[18px]">
         {prev ? (

@@ -3,7 +3,7 @@ export const site = {
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://journeytoadvent.com').replace(/\/$/, ''),
   tagline: 'A hymn a day from the First Sunday of Advent to Christmas Eve',
   description:
-    'A daily Advent devotional: one hymn a day, with Scripture, a short reflection, a word from the Christian tradition, a question to carry, and the collect for the week.',
+    'A daily Advent devotional: one hymn a day, with Scripture, a short reflection, a word from the Christian tradition, something to think about, and the collect for the week.',
   author: 'The Rev. Thom Crowe',
   byline: 'Written by the Rev. Thom Crowe',
 }
@@ -22,12 +22,6 @@ export function absoluteUrl(path: string) {
 /** Required notice wherever NRSV text is quoted (NCC gratis-use terms: up to 500 verses). */
 export const NRSV_NOTICE =
   'Scripture quotations are from the New Revised Standard Version Bible, copyright © 1989 the National Council of the Churches of Christ in the United States of America. Used by permission. All rights reserved worldwide.'
-
-/** Oremus Bible Browser link (NRSV) for a reference like "Mark 13:24–37". */
-export function bibleUrl(ref: string) {
-  const passage = ref.replace(/[–—]/g, '-').trim()
-  return `https://bible.oremus.org/?version=NRSVAE&passage=${encodeURIComponent(passage)}`
-}
 
 export function dayPath(year: number, day: number) {
   return `/${year}/day/${day}`

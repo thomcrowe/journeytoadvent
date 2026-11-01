@@ -5,6 +5,7 @@ import { clients } from '@/sanity/client'
 import { sanityConfigured } from '@/sanity/env'
 import * as Q from '@/sanity/queries'
 import { fallback } from './fallback-data'
+import { withSeedScripture } from './seed-scripture'
 import { releaseDate } from './date'
 import type { Entry, EntrySummary, Hymn, HymnWithEntries, Season, Week } from './types'
 
@@ -78,18 +79,18 @@ export async function getEntrySummaries(year: number): Promise<EntrySummary[]> {
 
 export async function getEntry(year: number, day: number): Promise<Entry | null> {
   if (!sanityConfigured) return fallback().entries.find((e) => e.year === year && e.dayNumber === day) ?? null
-  return sanity<Entry | null>(Q.entryByDay, { year, day }, [`season:${year}`, `entry:${year}:${day}`, 'type:entry', 'type:hymn', 'type:week'])
+  return withSeedScripture(await sanity<Entry | null>(Q.entryByDay, { year, day }, [`season:${year}`, `entry:${year}:${day}`, 'type:entry', 'type:hymn', 'type:week']))
 }
 
 export async function getEntryByDate(date: string): Promise<Entry | null> {
   if (!sanityConfigured) return fallback().entries.find((e) => e.date === date) ?? null
-  return sanity<Entry | null>(Q.entryByDate, { date }, ['type:entry', 'type:hymn', 'type:week', 'type:season'])
+  return withSeedScripture(await sanity<Entry | null>(Q.entryByDate, { date }, ['type:entry', 'type:hymn', 'type:week', 'type:season']))
 }
 
 /** Every entry with full content, oldest first (feed, email). */
 export async function getAllEntries(year: number): Promise<Entry[]> {
   if (!sanityConfigured) return fallback().entries.filter((e) => e.year === year)
-  return sanity<Entry[]>(Q.entriesFull, { year }, [`season:${year}`, 'type:entry', 'type:hymn', 'type:week'])
+  return (await sanity<Entry[]>(Q.entriesFull, { year }, [`season:${year}`, 'type:entry', 'type:hymn', 'type:week'])).map(withSeedScripture)
 }
 
 export async function getHymnsWithEntries(): Promise<HymnWithEntries[]> {

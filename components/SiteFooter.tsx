@@ -12,7 +12,16 @@ export function SiteFooter() {
         <Link href="/about" className="text-ink-muted hover:text-rubric">About</Link>
         <Link href="/subscribe" className="text-ink-muted hover:text-rubric">Subscribe</Link>
         <a href="/feed.xml" className="text-ink-muted hover:text-rubric">RSS</a>
+        <Link href="/privacy" className="text-ink-muted hover:text-rubric">Privacy</Link>
       </div>
+      <a
+        href="https://kindlinggrowth.co"
+        className="flex w-full items-center gap-2 text-[14px] text-ink-muted no-underline hover:text-rubric"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element -- tiny static logo */}
+        <img src="/kindling-growth-flame.png" alt="" width={11} height={20} className="h-5 w-auto" />
+        Built to the glory of God by Kindling Growth
+      </a>
     </footer>
   )
 }

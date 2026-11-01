@@ -95,8 +95,8 @@ Advent is a good time to check the lamp.
 
 **From the tradition**
 
-> "Your very desire is your prayer; and if your desire is continual, your prayer is continual."
-> — St. Augustine, *Expositions on the Psalms* 38
+> "To keep a lamp burning, we have to keep putting oil in it."
+> — St. Teresa of Calcutta
 
 **Something to think about today:** What is one small, daily practice that could keep oil in your lamp this Advent?
 
