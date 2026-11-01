@@ -25,8 +25,9 @@ export const metadata: Metadata = {
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } : undefined,
 }
 
-// Google Analytics 4: set NEXT_PUBLIC_GA_MEASUREMENT_ID (G-XXXXXXX) in Vercel and redeploy.
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+// Google Analytics 4. The measurement ID is public (it ships in every page), so
+// it lives here; NEXT_PUBLIC_GA_MEASUREMENT_ID can override it.
+const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-25KDFE1RZW'
 
 export const viewport: Viewport = {
   themeColor: '#FBF8F1',
@@ -37,14 +38,10 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html lang="en" className={garamond.variable}>
       <body className="min-h-dvh antialiased">
         {children}
-        {GA_ID && (
-          <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-            <Script id="ga4" strategy="afterInteractive">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}');`}
-            </Script>
-          </>
-        )}
+        {/* Loads Google Analytics unless the reader sends Do Not Track, and never inside the Studio. */}
+        <Script id="ga4" strategy="afterInteractive">
+          {`(function(){var d=navigator.doNotTrack=='1'||window.doNotTrack=='1';if(d||location.pathname.indexOf('/studio')===0)return;window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','${GA_ID}');var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${GA_ID}';document.head.appendChild(s)})();`}
+        </Script>
       </body>
     </html>
   )
