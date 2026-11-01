@@ -3,7 +3,7 @@ export const site = {
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://journeytoadvent.com').replace(/\/$/, ''),
   tagline: 'A hymn a day from the First Sunday of Advent to Christmas Eve',
   description:
-    'A daily Advent devotional: one hymn a day, with Scripture, a short reflection, a word from the Christian tradition, a question to carry, and the collect for the week.',
+    'A daily Advent devotional: one hymn a day, with Scripture, a short reflection, a word from the Christian tradition, something to think about, and the collect for the week.',
   author: 'The Rev. Thom Crowe',
   byline: 'Written by the Rev. Thom Crowe',
 }

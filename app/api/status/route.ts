@@ -31,6 +31,10 @@ export async function GET() {
       webhookSecret: has('SANITY_REVALIDATE_SECRET'),
       note: sanityConfigured ? undefined : 'Site is showing built-in sample content. Set NEXT_PUBLIC_SANITY_PROJECT_ID and redeploy.',
     },
+    google: {
+      analyticsId: has('NEXT_PUBLIC_GA_MEASUREMENT_ID'),
+      searchConsoleTag: has('NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION'),
+    },
     posthog: {
       key: has('NEXT_PUBLIC_POSTHOG_KEY'),
       host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com (default)',
