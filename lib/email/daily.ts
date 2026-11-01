@@ -39,7 +39,9 @@ export async function buildDailyEmail(entry: Entry) {
       ...pickStanzas(entry.hymn.stanzas, entry.featuredStanzas),
     ],
     scriptureRef: entry.scriptureRef,
-    scriptureUrl: entry.scriptureRef ? bibleUrl(entry.scriptureRef) : undefined,
+    // With the passage on the page, link readers to the day page instead of another site.
+    scriptureUrl: entry.scriptureText ? url : entry.scriptureRef ? bibleUrl(entry.scriptureRef) : undefined,
+    scriptureText: entry.scriptureText,
     reflection: blocksToParagraphs(entry.reflection),
     quote: entry.traditionQuote,
     question: entry.question,

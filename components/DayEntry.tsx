@@ -110,14 +110,22 @@ export function DayEntry({
         <div className="flex flex-col gap-3 border-y border-rule py-4">
           <div className="flex items-baseline gap-3.5">
             <h2 className="label">Read</h2>
-            <a href={bibleUrl(entry.scriptureRef)} className="text-[20px]" rel="noopener noreferrer">
-              {entry.scriptureRef}
-              <span className="sr-only"> (opens the NRSV at Oremus Bible Browser)</span>
-            </a>
+            {entry.scriptureText ? (
+              <span className="text-[20px]">
+                {entry.scriptureRef} <span className="text-[16px] text-ink-muted">(KJV)</span>
+              </span>
+            ) : (
+              <a href={bibleUrl(entry.scriptureRef)} className="text-[20px]" rel="noopener noreferrer">
+                {entry.scriptureRef}
+                <span className="sr-only"> (opens the NRSV at Oremus Bible Browser)</span>
+              </a>
+            )}
           </div>
           {entry.scriptureText && (
-            <blockquote className="text-[18px] italic leading-[1.55] text-ink">
-              {entry.scriptureText} <span className="not-italic text-ink-muted">(KJV)</span>
+            <blockquote className="flex flex-col gap-3 text-[18px] leading-[1.6] text-ink">
+              {entry.scriptureText.split(/\n\s*\n/).map((para, i) => (
+                <p key={i}>{para.trim()}</p>
+              ))}
             </blockquote>
           )}
         </div>
@@ -147,9 +155,9 @@ export function DayEntry({
       )}
 
       {entry.question && (
-        <section aria-labelledby="carry-heading" className="flex flex-col gap-2.5 border-t-2 border-rubric py-6">
-          <h2 id="carry-heading" className="label label-rubric">
-            Carry this
+        <section aria-labelledby="think-heading" className="flex flex-col gap-2.5 border-t-2 border-rubric py-6">
+          <h2 id="think-heading" className="label label-rubric">
+            Something to think about today
           </h2>
           <p className="text-[22px] leading-[1.45] sm:text-[24px]">{entry.question}</p>
         </section>

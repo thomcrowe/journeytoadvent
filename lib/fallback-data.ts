@@ -79,6 +79,7 @@ function build() {
       secondaryStanzas: d.antiphon ? [d.antiphon.emmanuelStanza] : undefined,
       antiphon: d.antiphon ? { latin: d.antiphon.latin, english: d.antiphon.english } : undefined,
       scriptureRef: s?.scriptureRef,
+      scriptureText: s?.scriptureText,
       reflection: s ? paragraphsToBlocks(s.reflection, `d${d.day}`) : undefined,
       traditionQuote: s?.quote,
       question: s?.question,

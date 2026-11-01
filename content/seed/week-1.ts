@@ -24,6 +24,8 @@ export const week1 = `# Journey to Advent · Week 1: Keep Awake
 
 **Read:** Mark 13:24–37
 
+> ²⁴ But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light, ²⁵ And the stars of heaven shall fall, and the powers that are in heaven shall be shaken. ²⁶ And then shall they see the Son of man coming in the clouds with great power and glory. ²⁷ And then shall he send his angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven. ²⁸ Now learn a parable of the fig tree; When her branch is yet tender, and putteth forth leaves, ye know that summer is near: ²⁹ So ye in like manner, when ye shall see these things come to pass, know that it is nigh, even at the doors. ³⁰ Verily I say unto you, that this generation shall not pass, till all these things be done. ³¹ Heaven and earth shall pass away: but my words shall not pass away. ³² But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father. ³³ Take ye heed, watch and pray: for ye know not when the time is. ³⁴ For the Son of man is as a man taking a far journey, who left his house, and gave authority to his servants, and to every man his work, and commanded the porter to watch. ³⁵ Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning: ³⁶ Lest coming suddenly he find you sleeping. ³⁷ And what I say unto you I say unto all, Watch.
+
 **Reflect**
 
 Advent does not begin in Bethlehem. It begins at the end of the world.
@@ -45,7 +47,7 @@ So before we sing about the manger, the Church asks us to lift our eyes to the c
 > "We preach not one advent only of Christ, but a second also, far more glorious than the former."
 > — St. Cyril of Jerusalem, *Catechetical Lectures* 15
 
-**Carry this:** If the one who comes to judge the world bears the marks of his love for you, what would it look like to watch for him this week without fear?
+**Something to think about today:** If the one who comes to judge the world bears the marks of his love for you, what would it look like to watch for him this week without fear?
 
 ## Day 2 · Monday, November 30
 
@@ -66,6 +68,8 @@ So before we sing about the manger, the Church asks us to lift our eyes to the c
 > — Philipp Nicolai (1599), translated by Catherine Winkworth (1858)
 
 **Read:** Matthew 25:1–13
+
+> ¹ Then shall the kingdom of heaven be likened unto ten virgins, which took their lamps, and went forth to meet the bridegroom. ² And five of them were wise, and five were foolish. ³ They that were foolish took their lamps, and took no oil with them: ⁴ But the wise took oil in their vessels with their lamps. ⁵ While the bridegroom tarried, they all slumbered and slept. ⁶ And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him. ⁷ Then all those virgins arose, and trimmed their lamps. ⁸ And the foolish said unto the wise, Give us of your oil; for our lamps are gone out. ⁹ But the wise answered, saying, Not so; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves. ¹⁰ And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut. ¹¹ Afterward came also the other virgins, saying, Lord, Lord, open to us. ¹² But he answered and said, Verily I say unto you, I know you not. ¹³ Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh.
 
 **Reflect**
 
@@ -90,7 +94,7 @@ Advent is a good time to check the lamp.
 > "Your very desire is your prayer; and if your desire is continual, your prayer is continual."
 > — St. Augustine, *Expositions on the Psalms* 38
 
-**Carry this:** What is one small, daily practice that could keep oil in your lamp this Advent?
+**Something to think about today:** What is one small, daily practice that could keep oil in your lamp this Advent?
 
 ## Day 3 · Tuesday, December 1
 
@@ -106,6 +110,8 @@ Advent is a good time to check the lamp.
 > — Eleanor Farjeon (1928)
 
 **Read:** Revelation 3:20
+
+> ²⁰ Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
 
 **Reflect**
 
@@ -135,7 +141,7 @@ So the work of Advent is not to make ourselves impressive enough for a royal vis
 > If I lack'd any thing.
 > — George Herbert, "Love (III)" (1633)
 
-**Carry this:** What is one room in your life (a habit, a relationship, an hour of the day) where you could set a place for Christ this week?
+**Something to think about today:** What is one room in your life (a habit, a relationship, an hour of the day) where you could set a place for Christ this week?
 
 ## Day 4 · Wednesday, December 2
 
@@ -153,6 +159,10 @@ So the work of Advent is not to make ourselves impressive enough for a royal vis
 > — Matthew Bridges (1851)
 
 **Read:** Revelation 19:11–16; 4:10–11
+
+> ¹¹ And I saw heaven opened, and behold a white horse; and he that sat upon him was called Faithful and True, and in righteousness he doth judge and make war. ¹² His eyes were as a flame of fire, and on his head were many crowns; and he had a name written, that no man knew, but he himself. ¹³ And he was clothed with a vesture dipped in blood: and his name is called The Word of God. ¹⁴ And the armies which were in heaven followed him upon white horses, clothed in fine linen, white and clean. ¹⁵ And out of his mouth goeth a sharp sword, that with it he should smite the nations: and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God. ¹⁶ And he hath on his vesture and on his thigh a name written, KING OF KINGS, AND LORD OF LORDS.
+>
+> Revelation 4 · ¹⁰ The four and twenty elders fall down before him that sat on the throne, and worship him that liveth for ever and ever, and cast their crowns before the throne, saying, ¹¹ Thou art worthy, O Lord, to receive glory and honour and power: for thou hast created all things, and for thy pleasure they are and were created.
 
 **Reflect**
 
@@ -178,7 +188,7 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 > lost in wonder, love, and praise.
 > — Charles Wesley, "Love Divine, All Loves Excelling" (1747)
 
-**Carry this:** What crown are you holding onto this season, and what would it mean to lay it down?
+**Something to think about today:** What crown are you holding onto this season, and what would it mean to lay it down?
 
 ## Day 5 · Thursday, December 3
 
@@ -206,6 +216,8 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 **Read:** Isaiah 2:2–5
 
+> ² And it shall come to pass in the last days, that the mountain of the LORD’S house shall be established in the top of the mountains, and shall be exalted above the hills; and all nations shall flow unto it. ³ And many people shall go and say, Come ye, and let us go up to the mountain of the LORD, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths: for out of Zion shall go forth the law, and the word of the LORD from Jerusalem. ⁴ And he shall judge among the nations, and shall rebuke many people: and they shall beat their swords into plowshares, and their spears into pruninghooks: nation shall not lift up sword against nation, neither shall they learn war any more. ⁵ O house of Jacob, come ye, and let us walk in the light of the LORD.
+
 **Reflect**
 
 Here is a Christmas carol with no manger in it.
@@ -227,7 +239,7 @@ So if you come to this season weary, you are exactly who this carol was written 
 > "All shall be well, and all shall be well, and all manner of thing shall be well."
 > — Julian of Norwich, *Revelations of Divine Love*
 
-**Carry this:** Where are you walking "with painful steps and slow" this season, and where could you stop by the road to listen?
+**Something to think about today:** Where are you walking "with painful steps and slow" this season, and where could you stop by the road to listen?
 
 ## Day 6 · Friday, December 4
 
@@ -246,6 +258,8 @@ So if you come to this season weary, you are exactly who this carol was written 
 > — John Brownlie (1907), set to an early American tune
 
 **Read:** Malachi 4:2
+
+> ² But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall.
 
 **Reflect**
 
@@ -270,7 +284,7 @@ If you are up early this week, look out an east window for a minute before the d
 > "We all look to the East when we pray, but few of us know that we are seeking our old fatherland, Paradise, which God planted in Eden, in the East."
 > — St. Basil the Great, *On the Holy Spirit* 27
 
-**Carry this:** Where in your life are you waiting in the dark for morning, and what would it mean to face east there?
+**Something to think about today:** Where in your life are you waiting in the dark for morning, and what would it mean to face east there?
 
 ## Day 7 · Saturday, December 5
 
@@ -289,6 +303,8 @@ If you are up early this week, look out an east window for a minute before the d
 > — Isaac Watts (1719), from Psalm 98
 
 **Read:** Psalm 98
+
+> ¹ O sing unto the LORD a new song; for he hath done marvellous things: his right hand, and his holy arm, hath gotten him the victory. ² The LORD hath made known his salvation: his righteousness hath he openly shewed in the sight of the heathen. ³ He hath remembered his mercy and his truth toward the house of Israel: all the ends of the earth have seen the salvation of our God. ⁴ Make a joyful noise unto the LORD, all the earth: make a loud noise, and rejoice, and sing praise. ⁵ Sing unto the LORD with the harp; with the harp, and the voice of a psalm. ⁶ With trumpets and sound of cornet make a joyful noise before the LORD, the King. ⁷ Let the sea roar, and the fulness thereof; the world, and they that dwell therein. ⁸ Let the floods clap their hands: let the hills be joyful together ⁹ Before the LORD; for he cometh to judge the earth: with righteousness shall he judge the world, and the people with equity.
 
 **Reflect**
 
@@ -312,5 +328,5 @@ So sing it a few weeks early this year. Let it be an Advent hymn for once. And w
 > There lives the dearest freshness deep down things.
 > — Gerard Manley Hopkins, "God's Grandeur" (1877)
 
-**Carry this:** Where have you seen the curse spread this year, and how far would you want Christ's blessing to flow there?
+**Something to think about today:** Where have you seen the curse spread this year, and how far would you want Christ's blessing to flow there?
 `
