@@ -2,6 +2,8 @@
 // in Garamond, and the four Advent candles on the right.
 export const OG_SIZE = { width: 1200, height: 630 }
 
+const ADVENT_DROP = -7
+
 const PURPLE = '#5B3A6E'
 const ROSE = '#C97A92'
 // Lit in order: week 1, week 2, week 3 (Gaudete, rose), week 4.
@@ -39,9 +41,11 @@ export function OgCard({ label, title, subtitle, lit = 4 }: { label?: string; ti
   return (
     <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 48, background: '#FBF8F1', color: '#1F1B16', padding: '64px 80px', fontFamily: 'EB Garamond', borderLeft: '16px solid #A3271F' }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 22, flex: 1 }}>
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
-          <div style={{ fontSize: 22, letterSpacing: 6, textTransform: 'uppercase' }}>Journey to</div>
-          <div style={{ fontSize: 46, fontStyle: 'italic', display: 'flex' }}>
+        {/* Satori ignores baseline alignment, so line the bottoms up and nudge
+            "Advent" down by the difference in descender depth. */}
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 14 }}>
+          <div style={{ fontSize: 22, lineHeight: 1, letterSpacing: 6, textTransform: 'uppercase' }}>Journey to</div>
+          <div style={{ fontSize: 46, lineHeight: 1, fontStyle: 'italic', display: 'flex', marginBottom: ADVENT_DROP }}>
             <span style={{ color: '#A3271F' }}>A</span>dvent
           </div>
         </div>
