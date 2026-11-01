@@ -12,6 +12,7 @@ export function SiteFooter() {
         <Link href="/about" className="text-ink-muted hover:text-rubric">About</Link>
         <Link href="/subscribe" className="text-ink-muted hover:text-rubric">Subscribe</Link>
         <a href="/feed.xml" className="text-ink-muted hover:text-rubric">RSS</a>
+        <Link href="/privacy" className="text-ink-muted hover:text-rubric">Privacy</Link>
       </div>
       <a
         href="https://kindlinggrowth.co"

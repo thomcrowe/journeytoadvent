@@ -17,7 +17,7 @@ export default async function Image({ params }: { params: Promise<{ year: string
     return new ImageResponse(<OgCard label="A hymn a day" title="Journey to Advent" />, { ...size, fonts })
   }
   return new ImageResponse(
-    <OgCard label={[`Day ${entry.dayNumber}`, entry.liturgicalLabel].filter(Boolean).join(' · ')} title={entry.hymn.title} subtitle={entry.hymn.tune ? `Tune: ${entry.hymn.tune}` : undefined} />,
+    <OgCard label={[`Day ${entry.dayNumber}`, entry.liturgicalLabel].filter(Boolean).join(' · ')} title={entry.hymn.title} subtitle={entry.hymn.tune ? `Tune: ${entry.hymn.tune}` : undefined} lit={Math.min(4, Math.ceil(entry.dayNumber / 7))} />,
     { ...size, fonts },
   )
 }
