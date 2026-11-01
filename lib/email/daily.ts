@@ -24,7 +24,8 @@ function blocksToParagraphs(blocks?: Blocks): string[] {
 export async function buildDailyEmail(entry: Entry) {
   const season = await getSeason(entry.year)
   const total = totalDays(season)
-  const url = absoluteUrl(dayPath(entry.year, entry.dayNumber))
+  // Tagged so Google Analytics counts visits that come from the daily email.
+  const url = `${absoluteUrl(dayPath(entry.year, entry.dayNumber))}?utm_source=daily-email&utm_medium=email&utm_campaign=journey-to-advent-${entry.year}`
   const recording = entry.recordingOverride?.youtubeId || entry.hymn.defaultRecording?.youtubeId
   const props: DailyEmailProps = {
     siteUrl: site.url,
