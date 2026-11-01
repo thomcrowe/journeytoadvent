@@ -6,7 +6,7 @@ import { ShareButton } from './ShareButton'
 import { Stanzas, pickStanzas } from './Stanzas'
 import { TrackOnMount, TrackWhenVisible, TrackedLink } from './Track'
 import { formatLong, isReleased } from '@/lib/date'
-import { bibleUrl, dayPath, formatDuration } from '@/lib/site'
+import { NRSV_NOTICE, bibleUrl, dayPath, formatDuration } from '@/lib/site'
 import type { Entry, EntrySummary, HymnRef, Week } from '@/lib/types'
 
 export function attribution(h: HymnRef) {
@@ -112,7 +112,7 @@ export function DayEntry({
             <h2 className="label">Read</h2>
             {entry.scriptureText ? (
               <span className="text-[20px]">
-                {entry.scriptureRef} <span className="text-[16px] text-ink-muted">(KJV)</span>
+                {entry.scriptureRef} <span className="text-[16px] text-ink-muted">(NRSV)</span>
               </span>
             ) : (
               <a href={bibleUrl(entry.scriptureRef)} className="text-[20px]" rel="noopener noreferrer">
@@ -127,6 +127,9 @@ export function DayEntry({
                 <p key={i}>{para.trim()}</p>
               ))}
             </blockquote>
+          )}
+          {entry.scriptureText && (
+            <p className="text-[13px] leading-[1.5] text-ink-muted">{NRSV_NOTICE}</p>
           )}
         </div>
       )}

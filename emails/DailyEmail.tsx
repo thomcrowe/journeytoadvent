@@ -1,6 +1,7 @@
 import { Button, Link, Section, Text } from 'react-email'
 import { Shell } from './Shell'
 import { c, font, s } from './theme'
+import { NRSV_NOTICE } from '../lib/site'
 
 export interface DailyEmailProps {
   siteUrl: string
@@ -71,7 +72,7 @@ export default function DailyEmail(p: DailyEmailProps) {
         <Text style={{ ...s.text, borderTop: `1px solid ${c.rule}`, borderBottom: `1px solid ${c.rule}`, padding: '12px 0' }}>
           <span style={{ ...s.label, fontSize: '13px' }}>Read&nbsp;&nbsp;</span>
           {p.scriptureUrl ? <Link href={p.scriptureUrl} style={s.link}>{p.scriptureRef}</Link> : p.scriptureRef}
-          {p.scriptureText ? ' (KJV)' : ''}
+          {p.scriptureText ? ' (NRSV)' : ''}
         </Text>
       )}
       {p.scriptureText &&
@@ -132,6 +133,7 @@ export default function DailyEmail(p: DailyEmailProps) {
           </>
         )}
       </Text>
+      {p.scriptureText && <Text style={{ ...s.muted, fontSize: '12px' }}>{NRSV_NOTICE}</Text>}
     </Shell>
   )
 }

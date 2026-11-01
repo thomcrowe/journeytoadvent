@@ -24,7 +24,11 @@ export const week1 = `# Journey to Advent · Week 1: Keep Awake
 
 **Read:** Mark 13:24–37
 
-> ²⁴ But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light, ²⁵ And the stars of heaven shall fall, and the powers that are in heaven shall be shaken. ²⁶ And then shall they see the Son of man coming in the clouds with great power and glory. ²⁷ And then shall he send his angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven. ²⁸ Now learn a parable of the fig tree; When her branch is yet tender, and putteth forth leaves, ye know that summer is near: ²⁹ So ye in like manner, when ye shall see these things come to pass, know that it is nigh, even at the doors. ³⁰ Verily I say unto you, that this generation shall not pass, till all these things be done. ³¹ Heaven and earth shall pass away: but my words shall not pass away. ³² But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father. ³³ Take ye heed, watch and pray: for ye know not when the time is. ³⁴ For the Son of man is as a man taking a far journey, who left his house, and gave authority to his servants, and to every man his work, and commanded the porter to watch. ³⁵ Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning: ³⁶ Lest coming suddenly he find you sleeping. ³⁷ And what I say unto you I say unto all, Watch.
+> ²⁴ “But in those days, after that suffering, the sun will be darkened, and the moon will not give its light, ²⁵ and the stars will be falling from heaven, and the powers in the heavens will be shaken. ²⁶ Then they will see ‘the Son of Man coming in clouds’ with great power and glory. ²⁷ Then he will send out the angels, and gather his elect from the four winds, from the ends of the earth to the ends of heaven.
+>
+> ²⁸ “From the fig tree learn its lesson: as soon as its branch becomes tender and puts forth its leaves, you know that summer is near. ²⁹ So also, when you see these things taking place, you know that he is near, at the very gates. ³⁰ Truly I tell you, this generation will not pass away until all these things have taken place. ³¹ Heaven and earth will pass away, but my words will not pass away.
+>
+> ³² “But about that day or hour no one knows, neither the angels in heaven, nor the Son, but only the Father. ³³ Beware, keep alert; for you do not know when the time will come. ³⁴ It is like a man going on a journey, when he leaves home and puts his slaves in charge, each with his work, and commands the doorkeeper to be on the watch. ³⁵ Therefore, keep awake—for you do not know when the master of the house will come, in the evening, or at midnight, or at cockcrow, or at dawn, ³⁶ or else he may find you asleep when he comes suddenly. ³⁷ And what I say to you I say to all: Keep awake.”
 
 **Reflect**
 
@@ -69,7 +73,7 @@ So before we sing about the manger, the Church asks us to lift our eyes to the c
 
 **Read:** Matthew 25:1–13
 
-> ¹ Then shall the kingdom of heaven be likened unto ten virgins, which took their lamps, and went forth to meet the bridegroom. ² And five of them were wise, and five were foolish. ³ They that were foolish took their lamps, and took no oil with them: ⁴ But the wise took oil in their vessels with their lamps. ⁵ While the bridegroom tarried, they all slumbered and slept. ⁶ And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him. ⁷ Then all those virgins arose, and trimmed their lamps. ⁸ And the foolish said unto the wise, Give us of your oil; for our lamps are gone out. ⁹ But the wise answered, saying, Not so; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves. ¹⁰ And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut. ¹¹ Afterward came also the other virgins, saying, Lord, Lord, open to us. ¹² But he answered and said, Verily I say unto you, I know you not. ¹³ Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh.
+> ¹ “Then the kingdom of heaven will be like this. Ten bridesmaids took their lamps and went to meet the bridegroom. ² Five of them were foolish, and five were wise. ³ When the foolish took their lamps, they took no oil with them; ⁴ but the wise took flasks of oil with their lamps. ⁵ As the bridegroom was delayed, all of them became drowsy and slept. ⁶ But at midnight there was a shout, ‘Look! Here is the bridegroom! Come out to meet him.’ ⁷ Then all those bridesmaids got up and trimmed their lamps. ⁸ The foolish said to the wise, ‘Give us some of your oil, for our lamps are going out.’ ⁹ But the wise replied, ‘No! there will not be enough for you and for us; you had better go to the dealers and buy some for yourselves.’ ¹⁰ And while they went to buy it, the bridegroom came, and those who were ready went with him into the wedding banquet; and the door was shut. ¹¹ Later the other bridesmaids came also, saying, ‘Lord, lord, open to us.’ ¹² But he replied, ‘Truly I tell you, I do not know you.’ ¹³ Keep awake therefore, for you know neither the day nor the hour.
 
 **Reflect**
 
@@ -111,7 +115,7 @@ Advent is a good time to check the lamp.
 
 **Read:** Revelation 3:20
 
-> ²⁰ Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
+> ²⁰ Listen! I am standing at the door, knocking; if you hear my voice and open the door, I will come in to you and eat with you, and you with me.
 
 **Reflect**
 
@@ -160,9 +164,9 @@ So the work of Advent is not to make ourselves impressive enough for a royal vis
 
 **Read:** Revelation 19:11–16; 4:10–11
 
-> ¹¹ And I saw heaven opened, and behold a white horse; and he that sat upon him was called Faithful and True, and in righteousness he doth judge and make war. ¹² His eyes were as a flame of fire, and on his head were many crowns; and he had a name written, that no man knew, but he himself. ¹³ And he was clothed with a vesture dipped in blood: and his name is called The Word of God. ¹⁴ And the armies which were in heaven followed him upon white horses, clothed in fine linen, white and clean. ¹⁵ And out of his mouth goeth a sharp sword, that with it he should smite the nations: and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God. ¹⁶ And he hath on his vesture and on his thigh a name written, KING OF KINGS, AND LORD OF LORDS.
+> ¹¹ Then I saw heaven opened, and there was a white horse! Its rider is called Faithful and True, and in righteousness he judges and makes war. ¹² His eyes are like a flame of fire, and on his head are many diadems; and he has a name inscribed that no one knows but himself. ¹³ He is clothed in a robe dipped in blood, and his name is called The Word of God. ¹⁴ And the armies of heaven, wearing fine linen, white and pure, were following him on white horses. ¹⁵ From his mouth comes a sharp sword with which to strike down the nations, and he will rule them with a rod of iron; he will tread the wine press of the fury of the wrath of God the Almighty. ¹⁶ On his robe and on his thigh he has a name inscribed, “King of kings and Lord of lords.”
 >
-> Revelation 4 · ¹⁰ The four and twenty elders fall down before him that sat on the throne, and worship him that liveth for ever and ever, and cast their crowns before the throne, saying, ¹¹ Thou art worthy, O Lord, to receive glory and honour and power: for thou hast created all things, and for thy pleasure they are and were created.
+> Revelation 4 · ¹⁰ The twenty-four elders fall before the one who is seated on the throne and worship the one who lives forever and ever; they cast their crowns before the throne, singing, ¹¹ “You are worthy, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created.”
 
 **Reflect**
 
@@ -216,7 +220,7 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 **Read:** Isaiah 2:2–5
 
-> ² And it shall come to pass in the last days, that the mountain of the LORD’S house shall be established in the top of the mountains, and shall be exalted above the hills; and all nations shall flow unto it. ³ And many people shall go and say, Come ye, and let us go up to the mountain of the LORD, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths: for out of Zion shall go forth the law, and the word of the LORD from Jerusalem. ⁴ And he shall judge among the nations, and shall rebuke many people: and they shall beat their swords into plowshares, and their spears into pruninghooks: nation shall not lift up sword against nation, neither shall they learn war any more. ⁵ O house of Jacob, come ye, and let us walk in the light of the LORD.
+> ² In days to come the mountain of the Lord’s house shall be established as the highest of the mountains, and shall be raised above the hills; all the nations shall stream to it. ³ Many peoples shall come and say, “Come, let us go up to the mountain of the Lord, to the house of the God of Jacob; that he may teach us his ways and that we may walk in his paths.” For out of Zion shall go forth instruction, and the word of the Lord from Jerusalem. ⁴ He shall judge between the nations, and shall arbitrate for many peoples; they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war any more. ⁵ O house of Jacob, come, let us walk in the light of the Lord!
 
 **Reflect**
 
@@ -259,7 +263,7 @@ So if you come to this season weary, you are exactly who this carol was written 
 
 **Read:** Malachi 4:2
 
-> ² But unto you that fear my name shall the Sun of righteousness arise with healing in his wings; and ye shall go forth, and grow up as calves of the stall.
+> ² But for you who revere my name the sun of righteousness shall rise, with healing in its wings. You shall go out leaping like calves from the stall.
 
 **Reflect**
 
@@ -304,7 +308,11 @@ If you are up early this week, look out an east window for a minute before the d
 
 **Read:** Psalm 98
 
-> ¹ O sing unto the LORD a new song; for he hath done marvellous things: his right hand, and his holy arm, hath gotten him the victory. ² The LORD hath made known his salvation: his righteousness hath he openly shewed in the sight of the heathen. ³ He hath remembered his mercy and his truth toward the house of Israel: all the ends of the earth have seen the salvation of our God. ⁴ Make a joyful noise unto the LORD, all the earth: make a loud noise, and rejoice, and sing praise. ⁵ Sing unto the LORD with the harp; with the harp, and the voice of a psalm. ⁶ With trumpets and sound of cornet make a joyful noise before the LORD, the King. ⁷ Let the sea roar, and the fulness thereof; the world, and they that dwell therein. ⁸ Let the floods clap their hands: let the hills be joyful together ⁹ Before the LORD; for he cometh to judge the earth: with righteousness shall he judge the world, and the people with equity.
+> ¹ O sing to the Lord a new song, for he has done marvelous things. His right hand and his holy arm have gotten him victory. ² The Lord has made known his victory; he has revealed his vindication in the sight of the nations. ³ He has remembered his steadfast love and faithfulness to the house of Israel. All the ends of the earth have seen the victory of our God.
+>
+> ⁴ Make a joyful noise to the Lord, all the earth; break forth into joyous song and sing praises. ⁵ Sing praises to the Lord with the lyre, with the lyre and the sound of melody. ⁶ With trumpets and the sound of the horn make a joyful noise before the King, the Lord.
+>
+> ⁷ Let the sea roar, and all that fills it; the world and those who live in it. ⁸ Let the floods clap their hands; let the hills sing together for joy ⁹ at the presence of the Lord, for he is coming to judge the earth. He will judge the world with righteousness, and the peoples with equity.
 
 **Reflect**
 
