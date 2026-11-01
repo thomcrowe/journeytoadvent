@@ -4,9 +4,10 @@
 //   ### Hymn Title
 //   > stanzas (blank ">" line between stanzas), then "> — attribution"
 //   **Read:** Mark 13:24–37
+//   > the passage itself, optional (blank ">" line between paragraphs)
 //   **Reflect**  …paragraphs…
 //   **From the tradition**  > quote  > — Author, Source
-//   **Carry this:** question
+//   **Something to think about today:** question (or the old **Carry this:**)
 //   **Pray:** collect
 //
 // The parser is lenient about spacing, dashes, and whether a label's text sits
@@ -20,13 +21,14 @@ export interface ParsedDay {
   stanzas: ParsedStanza[]
   attribution?: string
   scriptureRef?: string
+  scriptureText?: string
   reflection: string[]
   quote?: { text: string; author?: string; source?: string }
   question?: string
   collect?: string
 }
 
-const LABEL = /^\*\*(Read|Reflect|From the tradition|Carry this|Pray)\s*:?\s*\*\*\s*:?\s*(.*)$/i
+const LABEL = /^\*\*(Read|Reflect|From the tradition|Carry this|Something to think about today|Pray)\s*:?\s*\*\*\s*:?\s*(.*)$/i
 const DASH = /^\s*(?:—|–|--)\s*/
 
 function stripQuote(line: string) {
@@ -72,6 +74,19 @@ function parseStanzas(lines: string[]): { stanzas: ParsedStanza[]; attribution?:
   }
   flush()
   return { stanzas, attribution }
+}
+
+// Lines after the reference on a **Read:** line: the passage, as a blockquote.
+function scriptureText(read: string) {
+  const lines = read.split('\n').slice(1)
+  const text = lines
+    .map(stripQuote)
+    .join('\n')
+    .split(/\n\s*\n/)
+    .map((p) => p.replace(/\s*\n\s*/g, ' ').trim())
+    .filter(Boolean)
+    .join('\n\n')
+  return text || undefined
 }
 
 function paragraphs(text: string) {
@@ -141,7 +156,8 @@ export function parseWeekMarkdown(md: string): ParsedDay[] {
       scriptureRef: text('read').split('\n')[0]?.replace(/\*/g, '').trim() || undefined,
       reflection: paragraphs(text('reflect')),
       quote,
-      question: text('carry this').replace(/\s*\n\s*/g, ' ').trim() || undefined,
+      scriptureText: scriptureText(text('read')),
+      question: (text('something to think about today') || text('carry this')).replace(/\s*\n\s*/g, ' ').trim() || undefined,
       collect: collect || undefined,
     })
   }

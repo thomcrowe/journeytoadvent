@@ -1,6 +1,7 @@
 import { Button, Link, Section, Text } from 'react-email'
 import { Shell } from './Shell'
 import { c, font, s } from './theme'
+import { NRSV_NOTICE } from '../lib/site'
 
 export interface DailyEmailProps {
   siteUrl: string
@@ -13,6 +14,7 @@ export interface DailyEmailProps {
   stanzas: { number: number; lines: string; refrain?: boolean }[]
   scriptureRef?: string
   scriptureUrl?: string
+  scriptureText?: string
   reflection: string[] // paragraphs (inline *italics* allowed)
   quote?: { text?: string; author?: string; source?: string }
   question?: string
@@ -70,8 +72,15 @@ export default function DailyEmail(p: DailyEmailProps) {
         <Text style={{ ...s.text, borderTop: `1px solid ${c.rule}`, borderBottom: `1px solid ${c.rule}`, padding: '12px 0' }}>
           <span style={{ ...s.label, fontSize: '13px' }}>Read&nbsp;&nbsp;</span>
           {p.scriptureUrl ? <Link href={p.scriptureUrl} style={s.link}>{p.scriptureRef}</Link> : p.scriptureRef}
+          {p.scriptureText ? ' (NRSV)' : ''}
         </Text>
       )}
+      {p.scriptureText &&
+        p.scriptureText.split(/\n\s*\n/).map((para, i) => (
+          <Text key={`scripture-${i}`} style={s.text}>
+            {para.trim()}
+          </Text>
+        ))}
 
       {p.reflection.length > 0 && (
         <>
@@ -101,7 +110,7 @@ export default function DailyEmail(p: DailyEmailProps) {
 
       {p.question && (
         <Section style={{ borderTop: `2px solid ${c.rubric}`, paddingTop: '14px', margin: '0 0 20px' }}>
-          <Text style={s.labelRubric}>Carry this</Text>
+          <Text style={s.labelRubric}>Something to think about today</Text>
           <Text style={{ ...s.text, fontSize: '21px', lineHeight: '1.45' }}>{p.question}</Text>
         </Section>
       )}
@@ -124,6 +133,7 @@ export default function DailyEmail(p: DailyEmailProps) {
           </>
         )}
       </Text>
+      {p.scriptureText && <Text style={{ ...s.muted, fontSize: '12px' }}>{NRSV_NOTICE}</Text>}
     </Shell>
   )
 }

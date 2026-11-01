@@ -84,10 +84,10 @@ Visit **`/api/status`** on any deployment. It shows yes/no for each service (San
 ## Content
 
 - **Lineup and metadata:** `content/lineup.ts` (hymns, tunes, weeks, BCP 1979 collects, O Antiphons). Verify every hymn's text and attribution against Hymnary.org.
-- **Seeding from Markdown:** each written week is a Markdown string in `content/seed/week-N.ts`, listed in `content/seed/index.ts` (`week-1.ts` holds Days 1–7). The Studio's **Load content** tool only fills empty fields; `npm run seed` overwrites them. Format: `## Day N · Weekday, Month D`, `### Hymn Title`, a blockquote of stanzas (blank `>` line between stanzas, `**1**` numbers, `— attribution`), then `**Read:**`, `**Reflect**`, `**From the tradition**`, `**Carry this:**`, `**Pray:**`. Re-running is safe.
+- **Seeding from Markdown:** each written week is a Markdown string in `content/seed/week-N.ts`, listed in `content/seed/index.ts` (`week-1.ts` holds Days 1–7). The Studio's **Load content** tool only fills empty fields; `npm run seed` overwrites them. Format: `## Day N · Weekday, Month D`, `### Hymn Title`, a blockquote of stanzas (blank `>` line between stanzas, `**1**` numbers, `— attribution`), then `**Read:**` (optionally followed by the passage as a blockquote), `**Reflect**`, `**From the tradition**`, `**Something to think about today:**`, `**Pray:**`. Re-running is safe.
 - **Stanzas:** one line of verse per line; wrap a line in `*asterisks*` to set it in italic; mark a stanza as a refrain to italicize it.
 - **Recordings:** YouTube video ID on the hymn (or per-day override). Nothing loads from YouTube until the reader presses play.
-- **Copyright:** public-domain texts only (US: before 1929). *People, Look East* is US-only: one stanza at most. Scripture on the page is KJV; the link goes to the NRSV at Oremus.
+- **Copyright:** public-domain texts only (US: before 1929). *People, Look East* is US-only: one stanza at most. Scripture on the page is NRSV, quoted under the NCC's gratis-use terms (up to 500 verses, with the notice in `lib/site.ts` shown under each passage and in the email). With no passage entered, the reference links to the NRSV at Oremus.
 
 ## Where things live
 

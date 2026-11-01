@@ -19,6 +19,10 @@ export function absoluteUrl(path: string) {
   return `${site.url}${path.startsWith('/') ? path : `/${path}`}`
 }
 
+/** Required notice wherever NRSV text is quoted (NCC gratis-use terms: up to 500 verses). */
+export const NRSV_NOTICE =
+  'Scripture quotations are from the New Revised Standard Version Bible, copyright © 1989 the National Council of the Churches of Christ in the United States of America. Used by permission. All rights reserved worldwide.'
+
 /** Oremus Bible Browser link (NRSV) for a reference like "Mark 13:24–37". */
 export function bibleUrl(ref: string) {
   const passage = ref.replace(/[–—]/g, '-').trim()

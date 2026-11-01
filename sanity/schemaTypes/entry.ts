@@ -92,8 +92,8 @@ export const entry = defineType({
     defineField({ name: 'secondaryStanzas', type: 'array', of: [{ type: 'number' }], group: 'hymn' }),
     defineField({ name: 'recordingOverride', type: 'recording', group: 'hymn' }),
 
-    defineField({ name: 'scriptureRef', title: 'Scripture reference', type: 'string', group: 'words', description: 'e.g. "Mark 13:24–37"' }),
-    defineField({ name: 'scriptureText', title: 'Scripture text (KJV)', type: 'text', rows: 4, group: 'words' }),
+    defineField({ name: 'scriptureRef', title: 'Scripture reference', type: 'string', group: 'words', description: 'e.g. "Mark 13:24–37". Shown above the passage; if the passage below is empty, it links to the NRSV instead.' }),
+    defineField({ name: 'scriptureText', title: 'Scripture text (NRSV)', type: 'text', rows: 8, group: 'words', description: 'The passage itself in the NRSV, shown on the page under the reference with the NRSV copyright notice. Leave a blank line between paragraphs.' }),
     defineField({ name: 'reflection', type: 'blockContent', group: 'words', validation: (r) => r.custom((v, ctx) => ((ctx.document as { status?: string })?.status === 'ready' && !(v as unknown[])?.length ? 'Required before marking ready' : true)) }),
     defineField({
       name: 'traditionQuote',
@@ -106,7 +106,7 @@ export const entry = defineType({
         defineField({ name: 'source', type: 'string' }),
       ],
     }),
-    defineField({ name: 'question', title: 'Carry this', type: 'text', rows: 3, group: 'words' }),
+    defineField({ name: 'question', title: 'Something to think about today', type: 'text', rows: 3, group: 'words' }),
     defineField({ name: 'collectOverride', type: 'collect', group: 'words', description: "Leave empty to use the week's collect" }),
 
     defineField({ name: 'shareImage', type: 'image', group: 'extras', description: 'Optional. A share image is generated automatically.' }),

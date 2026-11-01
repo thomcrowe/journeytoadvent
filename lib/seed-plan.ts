@@ -98,6 +98,7 @@ export function buildSeedPlan({ bonus = false }: { bonus?: boolean } = {}): Seed
       const set: Record<string, unknown> = {}
       if (p.stanzas.length) set.featuredStanzas = p.stanzas.filter((s) => !s.refrain).map((s) => s.number)
       if (p.scriptureRef) set.scriptureRef = p.scriptureRef
+    if (p.scriptureText) set.scriptureText = p.scriptureText
       if (p.reflection.length) set.reflection = paragraphsToBlocks(p.reflection, `d${p.day}`)
       if (p.quote?.text) set.traditionQuote = { text: p.quote.text, author: p.quote.author, source: p.quote.source }
       if (p.question) set.question = p.question

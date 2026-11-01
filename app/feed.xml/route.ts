@@ -12,7 +12,7 @@ export async function GET() {
     .map((e) => {
       const url = absoluteUrl(dayPath(e.year, e.dayNumber))
       const text = blocksToPlainText(e.reflection as never)
-      const description = [e.scriptureRef ? `Read: ${e.scriptureRef}` : '', text, e.question ? `Carry this: ${e.question}` : ''].filter(Boolean).join('\n\n')
+      const description = [e.scriptureRef ? `Read: ${e.scriptureRef}` : '', text, e.question ? `Something to think about today: ${e.question}` : ''].filter(Boolean).join('\n\n')
       return `    <item>
       <title>${esc(`Day ${e.dayNumber}: ${e.hymn.title}`)}</title>
       <link>${url}</link>
