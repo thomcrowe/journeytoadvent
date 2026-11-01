@@ -182,7 +182,7 @@ export function DayEntry({
           </div>
           <p className="text-[13px] leading-[1.5] text-ink-muted">{NRSV_NOTICE}</p>
           <p className="text-[16px]">
-            <a href="#reflect-heading">↑ Back to the reflection</a>
+            <a href="#reflect-heading">↑ Return to the reflection</a>
           </p>
         </section>
       )}
