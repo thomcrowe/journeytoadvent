@@ -196,24 +196,24 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 ## Day 5 · Thursday, December 3
 
-### Hark! a Thrilling Voice Is Sounding
+### Come, Thou Long-Expected Jesus
 
-> **1** Hark! a thrilling voice is sounding;
-> "Christ is nigh," it seems to say;
-> "Cast away the dreams of darkness,
-> O ye children of the day!"
+> **1** Come, thou long-expected Jesus,
+> born to set thy people free;
+> from our fears and sins release us;
+> let us find our rest in thee.
 >
-> **3** Lo! the Lamb, so long expected,
-> comes with pardon down from heaven;
-> let us haste, with tears of sorrow,
-> one and all to be forgiven.
+> **2** Israel's strength and consolation,
+> hope of all the earth thou art;
+> dear desire of every nation,
+> joy of every longing heart.
 >
-> **5** Honor, glory, virtue, merit,
-> to the Father and the Son,
-> with the co-eternal Spirit,
-> while unending ages run.
+> **3** Born thy people to deliver,
+> born a child and yet a King,
+> born to reign in us for ever,
+> now thy gracious kingdom bring.
 >
-> — Latin, 6th century; translated by Edward Caswall (1849), altered in *Hymns Ancient and Modern* (1861)
+> — Charles Wesley (1744)
 
 **Read:** Isaiah 2:2–5
 
@@ -221,24 +221,24 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 **Reflect**
 
-This is one of the oldest hymns we will sing all Advent. Its Latin original, *Vox clara ecce intonat*, was already being sung at morning prayer in the sixth century. For well over a thousand years, Christians have woken in the dark weeks of December and sung these words before the sun came up.
+Charles Wesley wrote this hymn in 1744 for a little pamphlet called *Hymns for the Nativity of Our Lord*. England was poor and anxious, and Wesley had spent years preaching in fields to miners and laborers who had little reason to hope. He gave them a hymn that is almost entirely a prayer. It doesn't describe Christ from a distance. It speaks to him. "Come."
 
-Listen to what the voice says. "Christ is nigh." Then a command: "Cast away the dreams of darkness, O ye children of the day!" It is Saint Paul's voice, from Romans 13: "the night is far gone, the day is near; let us then lay aside the works of darkness and put on the armor of light." We pray those same words every day this week in the Collect. Isaiah says it too: "O house of Jacob, come, let us walk in the light of the Lord!"
+Isaiah is speaking to the nations. He sees a day when "all the nations shall stream" to the mountain of the Lord, saying, "Come, let us go up." Wesley picks up that same longing and gives it a name. Christ is "hope of all the earth," the "dear desire of every nation." The whole world is restless for something it cannot name. Advent names it. The world is longing for him.
 
-Isaiah's vision is one of the great peace passages of Scripture. The nations stream uphill to the mountain of the Lord. Swords become plowshares. No one learns war any more. But notice where that peace comes from. It is not something the nations work out among themselves. It comes because the Lord teaches them his ways and judges between them. The peace arrives because someone arrives.
+Look at what the people in Isaiah want when they reach the mountain. Not a spectacle. Instruction: "that he may teach us his ways and that we may walk in his paths." And look at what happens when he teaches them. Swords become plowshares. War is unlearned. The peace of Isaiah is not something the nations achieve. It comes because the Lord comes and rules among them.
 
-The hymn tells us who. "Lo! the Lamb, so long expected, comes with pardon down from heaven." Not a good idea, not a noble example, not a spirit of goodwill, but the Lamb of God, who comes down from heaven. And notice the first thing the hymn asks of us when he comes. Not admiration. Repentance. "Let us haste, with tears of sorrow, one and all to be forgiven."
+That is why Wesley's third verse matters so much. "Born a child and yet a King." Wesley is careful here. The one in the manger is not a good man who later rose to greatness. He is the King, the eternal Son of God, born as one of us. Only God can do what this hymn asks: release us from our fears and sins, deliver his people, and "reign in us for ever."
 
-Then the hymn ends where the ancient hymns always end, in worship: "to the Father and the Son, with the co-eternal Spirit." The one we are waiting for is not a great teacher who came close to God. He is God, the eternal Son, of one Being with the Father. That is what makes Advent hope more than wishful thinking. If Jesus were only a good man, we would be waiting for an example. Because he is God, we are waiting for a Savior.
+Notice where Wesley wants that reign to happen. Not only over the nations, but "in us." The peace Isaiah saw on the mountain begins in the human heart. The swords we carry are often small ones: grudges, old hurts, the sharp word ready on our tongue. Advent invites us to bring those up the mountain too, and let him beat them into something that gives life.
 
-These are the darkest mornings of the year. Tomorrow, when you wake before the sun, let the first words in your head be the old ones: Christ is nigh. Then get up and walk in his light.
+"Let us find our rest in thee." If you come to this season tired, that line is for you. The one we are waiting for is not another demand on your December. He is the rest your heart has been looking for.
 
 **From the tradition**
 
 > God from God, Light from Light, true God from true God, begotten, not made, of one Being with the Father. Through him all things were made. For us and for our salvation he came down from heaven.
 > — The Nicene Creed, *The Book of Common Prayer* (1979)
 
-**Something to think about today:** What "dreams of darkness" is Christ asking you to cast away this Advent?
+**Something to think about today:** What sword are you carrying into this Advent that you would like Christ to turn into a plowshare?
 
 ## Day 6 · Friday, December 4
 
@@ -321,7 +321,7 @@ The third verse goes furthest. "No more let sins and sorrows grow, nor thorns in
 
 It is striking that a hymn about judgment is called "Joy to the World." We usually hear "judgment" as bad news. The psalm hears it as the best news there is. When the true King judges, the oppressed are lifted up, the lies are exposed, and the broken things are mended. That is why the rivers clap their hands. Creation has been waiting a long time for someone to set it right.
 
-This week we have watched for Christ's coming through thundering clouds, a midnight wedding, a supper at home, a coronation, a voice in the dark, and a sunrise. Watts gathers it all into one great shout. The one who is coming is not only our Savior. He is the healer of the whole creation.
+This week we have watched for Christ's coming through thundering clouds, a midnight wedding, a supper at home, a coronation, a mountain of peace, and a sunrise. Watts gathers it all into one great shout. The one who is coming is not only our Savior. He is the healer of the whole creation.
 
 So sing it a few weeks early this year. Let it be an Advent hymn for once. And when you sing it again on Christmas morning, remember that the joy of the manger points forward to something larger still: the day when heaven and nature sing together, and nothing is left under the curse.
 
