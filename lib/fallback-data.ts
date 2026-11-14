@@ -50,6 +50,7 @@ function build() {
       meter: h.meter,
       stanzas: h.title === 'Lo! He Comes with Clouds Descending' ? LO_HE_COMES_STANZAS : (seededStanzas.get(h.title) ?? []),
       copyright: { status: h.copyright ?? 'public-domain-worldwide', notes: h.copyrightNotes },
+      defaultRecording: h.recording,
     })
   }
 

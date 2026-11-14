@@ -16,6 +16,8 @@ export interface LineupHymn {
   meter?: string
   copyright?: CopyrightStatus
   copyrightNotes?: string
+  /** YouTube recording shown in the "Listen to the hymn" bar. durationSeconds is shown beside it. */
+  recording?: { youtubeId: string; label?: string; durationSeconds?: number }
 }
 
 export interface LineupDay {
@@ -58,10 +60,10 @@ export const HYMNS: LineupHymn[] = [
   { title: 'Wake, Awake, for Night Is Flying', textAuthor: 'Philipp Nicolai', translator: 'Catherine Winkworth', textYear: '1599; tr. 1858', tune: 'Wachet auf', meter: 'Irregular' },
   { title: 'People, Look East', textAuthor: 'Eleanor Farjeon', textYear: '1928', tune: 'Besançon', meter: '8.7.9.8.8.7', copyright: 'public-domain-us-only', copyrightNotes: 'Public domain in the US only (published 1928). Quote one stanza at most.' },
   { title: 'Crown Him with Many Crowns', textAuthor: 'Matthew Bridges; Godfrey Thring', textYear: '1851, 1874', tune: 'Diademata', meter: 'S.M.D.' },
-  { title: 'It Came Upon the Midnight Clear', textAuthor: 'Edmund Hamilton Sears', textYear: '1849', tune: 'Carol', meter: 'C.M.D.' },
+  { title: 'Hark! a Thrilling Voice Is Sounding', textAuthor: 'Latin, 6th century; altered in Hymns Ancient and Modern (1861)', translator: 'Edward Caswall', textYear: '6th c.; tr. 1849', tune: 'Merton', meter: '8.7.8.7', recording: { youtubeId: 'VCrEt11-SFU', label: 'Plymouth Choir and Congregation, First-Plymouth Church, Lincoln', durationSeconds: 200 } },
   { title: 'The King Shall Come When Morning Dawns', textAuthor: 'Greek hymn', translator: 'John Brownlie', textYear: 'tr. 1907', tune: 'Consolation', meter: 'C.M.' },
   { title: 'Joy to the World', textAuthor: 'Isaac Watts', textYear: '1719', tune: 'Antioch', meter: 'C.M. with repeats' },
-  { title: 'Come, Thou Long-Expected Jesus', textAuthor: 'Charles Wesley', textYear: '1744', tune: 'Stuttgart', meter: '8.7.8.7' },
+  { title: 'Come, Thou Long-Expected Jesus', textAuthor: 'Charles Wesley', textYear: '1744', tune: 'Stuttgart', meter: '8.7.8.7', recording: { youtubeId: 'inEw9oAG3a0', label: 'Notre Dame Folk Choir', durationSeconds: 194 } },
   { title: "On Jordan's Bank the Baptist's Cry", textAuthor: 'Charles Coffin', translator: 'John Chandler', textYear: '1736; tr. 1837', tune: 'Winchester New', meter: 'L.M.' },
   { title: 'Comfort, Comfort Ye My People', textAuthor: 'Johann Olearius', translator: 'Catherine Winkworth', textYear: '1671; tr. 1863', tune: 'Psalm 42', meter: '8.7.8.7.7.7.8.8' },
   { title: 'Lift Up Your Heads, Ye Mighty Gates', textAuthor: 'Georg Weissel', translator: 'Catherine Winkworth', textYear: '1642; tr. 1855', tune: 'Truro', meter: 'L.M.' },
@@ -131,10 +133,10 @@ export const DAYS: LineupDay[] = [
   { day: 2, date: '2026-11-30', hymn: 'Wake, Awake, for Night Is Flying', label: 'Saint Andrew' },
   { day: 3, date: '2026-12-01', hymn: 'People, Look East' },
   { day: 4, date: '2026-12-02', hymn: 'Crown Him with Many Crowns' },
-  { day: 5, date: '2026-12-03', hymn: 'It Came Upon the Midnight Clear' },
+  { day: 5, date: '2026-12-03', hymn: 'Come, Thou Long-Expected Jesus' },
   { day: 6, date: '2026-12-04', hymn: 'The King Shall Come When Morning Dawns' },
   { day: 7, date: '2026-12-05', hymn: 'Joy to the World' },
-  { day: 8, date: '2026-12-06', hymn: 'Come, Thou Long-Expected Jesus', label: 'The Second Sunday of Advent' },
+  { day: 8, date: '2026-12-06', hymn: 'Hark! a Thrilling Voice Is Sounding', label: 'The Second Sunday of Advent' },
   { day: 9, date: '2026-12-07', hymn: "On Jordan's Bank the Baptist's Cry" },
   { day: 10, date: '2026-12-08', hymn: 'Comfort, Comfort Ye My People' },
   { day: 11, date: '2026-12-09', hymn: 'Lift Up Your Heads, Ye Mighty Gates' },

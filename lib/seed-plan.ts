@@ -59,7 +59,10 @@ export function buildSeedPlan({ bonus = false }: { bonus?: boolean } = {}): Seed
       tune: h.tune,
       meter: h.meter,
       copyright: { status: h.copyright ?? 'public-domain-worldwide', notes: h.copyrightNotes ?? 'Verify text and attribution against Hymnary.org before publishing.' },
+      ...(h.recording ? { defaultRecording: { _type: 'recording', ...h.recording } } : {}),
     })
+    // Hymns created by an earlier load get the recording too, unless one is already set.
+    if (h.recording) patches.push({ id: ids.hymn(h.title), setIfMissing: { defaultRecording: { _type: 'recording', ...h.recording } } })
   }
 
   for (const d of days) {

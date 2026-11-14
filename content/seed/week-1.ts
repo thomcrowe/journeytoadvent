@@ -196,27 +196,24 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 ## Day 5 · Thursday, December 3
 
-### It Came Upon the Midnight Clear
+### Come, Thou Long-Expected Jesus
 
-> **4** And ye, beneath life's crushing load,
-> whose forms are bending low,
-> who toil along the climbing way
-> with painful steps and slow,
-> look now! for glad and golden hours
-> come swiftly on the wing.
-> O rest beside the weary road,
-> and hear the angels sing!
+> **1** Come, thou long-expected Jesus,
+> born to set thy people free;
+> from our fears and sins release us;
+> let us find our rest in thee.
 >
-> **5** For lo! the days are hastening on,
-> by prophet bards foretold,
-> when with the ever-circling years
-> comes round the age of gold;
-> when peace shall over all the earth
-> its ancient splendors fling,
-> and the whole world give back the song
-> which now the angels sing.
+> **2** Israel's strength and consolation,
+> hope of all the earth thou art;
+> dear desire of every nation,
+> joy of every longing heart.
 >
-> — Edmund Hamilton Sears (1849)
+> **3** Born thy people to deliver,
+> born a child and yet a King,
+> born to reign in us for ever,
+> now thy gracious kingdom bring.
+>
+> — Charles Wesley (1744)
 
 **Read:** Isaiah 2:2–5
 
@@ -224,26 +221,24 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 **Reflect**
 
-Here is a Christmas carol with no manger in it.
+Charles Wesley wrote this hymn in 1744 for a little pamphlet called *Hymns for the Nativity of Our Lord*. England was poor and anxious, and Wesley had spent years preaching in fields to miners and laborers who had little reason to hope. He gave them a hymn that is almost entirely a prayer. It doesn't describe Christ from a distance. It speaks to him. "Come."
 
-Read it closely and you'll find no stable, no shepherds, no Mary or Joseph, and no baby. Edmund Sears, a pastor in Massachusetts, wrote it in 1849 during a hard stretch of his life, with his country at war and the news full of it. What caught his imagination was not the scene in Bethlehem but the song the angels sang over it, and the question that song raises: if heaven announced "peace on the earth," why is the earth still at war?
+Isaiah is speaking to the nations. He sees a day when "all the nations shall stream" to the mountain of the Lord, saying, "Come, let us go up." Wesley picks up that same longing and gives it a name. Christ is "hope of all the earth," the "dear desire of every nation." The whole world is restless for something it cannot name. Advent names it. The world is longing for him.
 
-Sears doesn't dodge the question. In a verse many hymnals leave out, he writes of "two thousand years of wrong" rolling on beneath the angels' song, and says that man, "at war with man, hears not the love-song which they bring." The song was sung. We have not been listening.
+Look at what the people in Isaiah want when they reach the mountain. Not a spectacle. Instruction: "that he may teach us his ways and that we may walk in his paths." And look at what happens when he teaches them. Swords become plowshares. War is unlearned. The peace of Isaiah is not something the nations achieve. It comes because the Lord comes and rules among them.
 
-Then the hymn turns to the people most likely to have stopped listening: the tired ones. "Ye, beneath life's crushing load, whose forms are bending low." It is one of the most tender verses in any carol, and it is written for anyone who arrives at December exhausted. Sears doesn't tell them to try harder. He tells them to stop. "Rest beside the weary road, and hear the angels sing."
+That is why Wesley's third verse matters so much. "Born a child and yet a King." Wesley is careful here. The one in the manger is not a good man who later rose to greatness. He is the King, the eternal Son of God, born as one of us. Only God can do what this hymn asks: release us from our fears and sins, deliver his people, and "reign in us for ever."
 
-And then he looks forward. The last verse is an Advent verse: "the days are hastening on." Like Isaiah, who saw nations beating their swords into plowshares, Sears looks to the day when the whole world will finally "give back the song." The angels sang it first over Bethlehem. One day all creation will sing it back.
+Notice where Wesley wants that reign to happen. Not only over the nations, but "in us." The peace Isaiah saw on the mountain begins in the human heart. The swords we carry are often small ones: grudges, old hurts, the sharp word ready on our tongue. Advent invites us to bring those up the mountain too, and let him beat them into something that gives life.
 
-That is the shape of Christian hope. We are not pretending the world is at peace. We know it isn't. But we have heard the first notes of the song, and we know how it ends. Advent hope lives in the space between the angels' first singing and the world's last answer.
-
-So if you come to this season weary, you are exactly who this carol was written for. You don't have to fix the world before Christmas. You are invited to rest by the road for a moment and listen for the song that has been playing all along.
+"Let us find our rest in thee." If you come to this season tired, that line is for you. The one we are waiting for is not another demand on your December. He is the rest your heart has been looking for.
 
 **From the tradition**
 
-> "All shall be well, and all shall be well, and all manner of thing shall be well."
-> — Julian of Norwich, *Revelations of Divine Love*
+> God from God, Light from Light, true God from true God, begotten, not made, of one Being with the Father. Through him all things were made. For us and for our salvation he came down from heaven.
+> — The Nicene Creed, *The Book of Common Prayer* (1979)
 
-**Something to think about today:** Where are you walking "with painful steps and slow" this season, and where could you stop by the road to listen?
+**Something to think about today:** What sword are you carrying into this Advent that you would like Christ to turn into a plowshare?
 
 ## Day 6 · Friday, December 4
 
@@ -326,7 +321,7 @@ The third verse goes furthest. "No more let sins and sorrows grow, nor thorns in
 
 It is striking that a hymn about judgment is called "Joy to the World." We usually hear "judgment" as bad news. The psalm hears it as the best news there is. When the true King judges, the oppressed are lifted up, the lies are exposed, and the broken things are mended. That is why the rivers clap their hands. Creation has been waiting a long time for someone to set it right.
 
-This week we have watched for Christ's coming through thundering clouds, a midnight wedding, a supper at home, a coronation, a weary road, and a sunrise. Watts gathers it all into one great shout. The one who is coming is not only our Savior. He is the healer of the whole creation.
+This week we have watched for Christ's coming through thundering clouds, a midnight wedding, a supper at home, a coronation, a mountain of peace, and a sunrise. Watts gathers it all into one great shout. The one who is coming is not only our Savior. He is the healer of the whole creation.
 
 So sing it a few weeks early this year. Let it be an Advent hymn for once. And when you sing it again on Christmas morning, remember that the joy of the manger points forward to something larger still: the day when heaven and nature sing together, and nothing is left under the curse.
 
