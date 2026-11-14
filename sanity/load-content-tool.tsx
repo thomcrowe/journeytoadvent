@@ -58,8 +58,26 @@ function LoadContent() {
   const run = async () => {
     setState({ kind: 'loading' })
     try {
+      // Days not written yet follow the lineup: if the lineup's hymn for a day
+      // changed after an earlier load, point the empty entry at the new hymn.
+      // Entries that already have a reflection are left alone.
+      const lineupEntries = plan.creates.filter((d) => d._type === 'entry') as Array<
+        { _id: string; hymn?: { _ref: string }; liturgicalLabel?: string }
+      >
+      const existing = await client.fetch<{ _id: string; hymn?: string; written: boolean }[]>(
+        `*[_type == "entry" && _id in $ids]{_id, "hymn": hymn._ref, "written": defined(reflection)}`,
+        { ids: lineupEntries.map((d) => d._id) },
+      )
       const tx = client.transaction()
       for (const doc of plan.creates) tx.createIfNotExists(doc)
+      for (const e of existing) {
+        const want = lineupEntries.find((d) => d._id === e._id)
+        if (!e.written && want?.hymn && e.hymn !== want.hymn._ref) {
+          tx.patch(e._id, (patch) =>
+            patch.set({ hymn: { _type: 'reference', _ref: want.hymn!._ref }, ...(want.liturgicalLabel ? { liturgicalLabel: want.liturgicalLabel } : {}) }),
+          )
+        }
+      }
       for (const p of plan.patches) {
         // Only fill empty fields, so Studio edits are never overwritten.
         const fill = { ...(p.setIfMissing ?? {}), ...(p.set ?? {}) }
