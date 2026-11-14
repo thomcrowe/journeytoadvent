@@ -2,7 +2,7 @@ import { render } from 'react-email'
 import WelcomeEmail from '@/emails/WelcomeEmail'
 import { getCurrentSeason } from '@/lib/content'
 import { daysBetween, formatLong, releaseDate } from '@/lib/date'
-import { verifyToken } from '@/lib/email/token'
+import { createUnsubscribeToken, verifyToken } from '@/lib/email/token'
 import { emailFrom, resend, segmentId } from '@/lib/email/resend'
 import { absoluteUrl, dayPath, site } from '@/lib/site'
 
@@ -37,9 +37,12 @@ export async function POST(request: Request) {
     const season = await getCurrentSeason()
     const today = releaseDate()
     const during = season && today >= season.startDate && today <= season.endDate
+    const unsubToken = encodeURIComponent(createUnsubscribeToken(email))
+    const unsubscribeUrl = absoluteUrl(`/unsubscribe?token=${unsubToken}`)
     const html = await render(
       WelcomeEmail({
         siteUrl: site.url,
+        unsubscribeUrl,
         startLabel: season ? formatLong(season.startDate).replace(/, \d{4}$/, '') : 'the First Sunday of Advent',
         midSeason: during
           ? {
@@ -50,7 +53,16 @@ export async function POST(request: Request) {
           : undefined,
       }),
     )
-    await resend.emails.send({ from: emailFrom, to: email, subject: 'Welcome to Journey to Advent', html })
+    await resend.emails.send({
+      from: emailFrom,
+      to: email,
+      subject: 'Welcome to Journey to Advent',
+      html,
+      headers: {
+        'List-Unsubscribe': `<${absoluteUrl(`/api/unsubscribe?token=${unsubToken}`)}>`,
+        'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+      },
+    })
   } catch (err) {
     console.error('[confirm] welcome email failed', err)
   }

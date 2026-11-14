@@ -1,7 +1,23 @@
 import { Body, Container, Head, Hr, Html, Link, Preview, Section, Text } from 'react-email'
 import { c, s } from './theme'
 
-export function Shell({ preview, children, siteUrl, unsubscribe = false }: { preview: string; children: React.ReactNode; siteUrl: string; unsubscribe?: boolean }) {
+// Broadcasts (the daily email) use Resend's own unsubscribe link. Emails sent one
+// at a time (the welcome email) pass their own signed unsubscribeUrl.
+const RESEND_UNSUBSCRIBE = '{{{RESEND_UNSUBSCRIBE_URL}}}'
+
+export function Shell({
+  preview,
+  children,
+  siteUrl,
+  unsubscribe = false,
+  unsubscribeUrl = RESEND_UNSUBSCRIBE,
+}: {
+  preview: string
+  children: React.ReactNode
+  siteUrl: string
+  unsubscribe?: boolean
+  unsubscribeUrl?: string
+}) {
   return (
     <Html lang="en">
       <Head>
@@ -22,11 +38,11 @@ export function Shell({ preview, children, siteUrl, unsubscribe = false }: { pre
           {children}
           <Hr style={s.hr} />
           <Text style={{ ...s.muted, fontSize: '14px' }}>
-            Journey to Advent · Hymn texts in the public domain · Collects from the Book of Common Prayer (1979)
+            Journey to Advent · Hymn texts in the public domain · Collects from the Book of Common Prayer (1979) · Reflections from Fr. Thom Crowe
             {unsubscribe && (
               <>
                 <br />
-                <Link href="{{{RESEND_UNSUBSCRIBE_URL}}}" style={{ color: c.muted }}>
+                <Link href={unsubscribeUrl} style={{ color: c.muted }}>
                   Unsubscribe
                 </Link>
               </>
