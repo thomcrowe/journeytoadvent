@@ -196,27 +196,24 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 ## Day 5 · Thursday, December 3
 
-### It Came Upon the Midnight Clear
+### Hark! a Thrilling Voice Is Sounding
 
-> **4** And ye, beneath life's crushing load,
-> whose forms are bending low,
-> who toil along the climbing way
-> with painful steps and slow,
-> look now! for glad and golden hours
-> come swiftly on the wing.
-> O rest beside the weary road,
-> and hear the angels sing!
+> **1** Hark! a thrilling voice is sounding;
+> "Christ is nigh," it seems to say;
+> "Cast away the dreams of darkness,
+> O ye children of the day!"
 >
-> **5** For lo! the days are hastening on,
-> by prophet bards foretold,
-> when with the ever-circling years
-> comes round the age of gold;
-> when peace shall over all the earth
-> its ancient splendors fling,
-> and the whole world give back the song
-> which now the angels sing.
+> **3** Lo! the Lamb, so long expected,
+> comes with pardon down from heaven;
+> let us haste, with tears of sorrow,
+> one and all to be forgiven.
 >
-> — Edmund Hamilton Sears (1849)
+> **5** Honor, glory, virtue, merit,
+> to the Father and the Son,
+> with the co-eternal Spirit,
+> while unending ages run.
+>
+> — Latin, 6th century; translated by Edward Caswall (1849), altered in *Hymns Ancient and Modern* (1861)
 
 **Read:** Isaiah 2:2–5
 
@@ -224,26 +221,24 @@ That may be the most honest Advent posture there is. Each of us wears some crown
 
 **Reflect**
 
-Here is a Christmas carol with no manger in it.
+This is one of the oldest hymns we will sing all Advent. Its Latin original, *Vox clara ecce intonat*, was already being sung at morning prayer in the sixth century. For well over a thousand years, Christians have woken in the dark weeks of December and sung these words before the sun came up.
 
-Read it closely and you'll find no stable, no shepherds, no Mary or Joseph, and no baby. Edmund Sears, a pastor in Massachusetts, wrote it in 1849 during a hard stretch of his life, with his country at war and the news full of it. What caught his imagination was not the scene in Bethlehem but the song the angels sang over it, and the question that song raises: if heaven announced "peace on the earth," why is the earth still at war?
+Listen to what the voice says. "Christ is nigh." Then a command: "Cast away the dreams of darkness, O ye children of the day!" It is Saint Paul's voice, from Romans 13: "the night is far gone, the day is near; let us then lay aside the works of darkness and put on the armor of light." We pray those same words every day this week in the Collect. Isaiah says it too: "O house of Jacob, come, let us walk in the light of the Lord!"
 
-Sears doesn't dodge the question. In a verse many hymnals leave out, he writes of "two thousand years of wrong" rolling on beneath the angels' song, and says that man, "at war with man, hears not the love-song which they bring." The song was sung. We have not been listening.
+Isaiah's vision is one of the great peace passages of Scripture. The nations stream uphill to the mountain of the Lord. Swords become plowshares. No one learns war any more. But notice where that peace comes from. It is not something the nations work out among themselves. It comes because the Lord teaches them his ways and judges between them. The peace arrives because someone arrives.
 
-Then the hymn turns to the people most likely to have stopped listening: the tired ones. "Ye, beneath life's crushing load, whose forms are bending low." It is one of the most tender verses in any carol, and it is written for anyone who arrives at December exhausted. Sears doesn't tell them to try harder. He tells them to stop. "Rest beside the weary road, and hear the angels sing."
+The hymn tells us who. "Lo! the Lamb, so long expected, comes with pardon down from heaven." Not a good idea, not a noble example, not a spirit of goodwill, but the Lamb of God, who comes down from heaven. And notice the first thing the hymn asks of us when he comes. Not admiration. Repentance. "Let us haste, with tears of sorrow, one and all to be forgiven."
 
-And then he looks forward. The last verse is an Advent verse: "the days are hastening on." Like Isaiah, who saw nations beating their swords into plowshares, Sears looks to the day when the whole world will finally "give back the song." The angels sang it first over Bethlehem. One day all creation will sing it back.
+Then the hymn ends where the ancient hymns always end, in worship: "to the Father and the Son, with the co-eternal Spirit." The one we are waiting for is not a great teacher who came close to God. He is God, the eternal Son, of one Being with the Father. That is what makes Advent hope more than wishful thinking. If Jesus were only a good man, we would be waiting for an example. Because he is God, we are waiting for a Savior.
 
-That is the shape of Christian hope. We are not pretending the world is at peace. We know it isn't. But we have heard the first notes of the song, and we know how it ends. Advent hope lives in the space between the angels' first singing and the world's last answer.
-
-So if you come to this season weary, you are exactly who this carol was written for. You don't have to fix the world before Christmas. You are invited to rest by the road for a moment and listen for the song that has been playing all along.
+These are the darkest mornings of the year. Tomorrow, when you wake before the sun, let the first words in your head be the old ones: Christ is nigh. Then get up and walk in his light.
 
 **From the tradition**
 
-> "All shall be well, and all shall be well, and all manner of thing shall be well."
-> — Julian of Norwich, *Revelations of Divine Love*
+> God from God, Light from Light, true God from true God, begotten, not made, of one Being with the Father. Through him all things were made. For us and for our salvation he came down from heaven.
+> — The Nicene Creed, *The Book of Common Prayer* (1979)
 
-**Something to think about today:** Where are you walking "with painful steps and slow" this season, and where could you stop by the road to listen?
+**Something to think about today:** What "dreams of darkness" is Christ asking you to cast away this Advent?
 
 ## Day 6 · Friday, December 4
 
@@ -326,7 +321,7 @@ The third verse goes furthest. "No more let sins and sorrows grow, nor thorns in
 
 It is striking that a hymn about judgment is called "Joy to the World." We usually hear "judgment" as bad news. The psalm hears it as the best news there is. When the true King judges, the oppressed are lifted up, the lies are exposed, and the broken things are mended. That is why the rivers clap their hands. Creation has been waiting a long time for someone to set it right.
 
-This week we have watched for Christ's coming through thundering clouds, a midnight wedding, a supper at home, a coronation, a weary road, and a sunrise. Watts gathers it all into one great shout. The one who is coming is not only our Savior. He is the healer of the whole creation.
+This week we have watched for Christ's coming through thundering clouds, a midnight wedding, a supper at home, a coronation, a voice in the dark, and a sunrise. Watts gathers it all into one great shout. The one who is coming is not only our Savior. He is the healer of the whole creation.
 
 So sing it a few weeks early this year. Let it be an Advent hymn for once. And when you sing it again on Christmas morning, remember that the joy of the manger points forward to something larger still: the day when heaven and nature sing together, and nothing is left under the curse.
 
