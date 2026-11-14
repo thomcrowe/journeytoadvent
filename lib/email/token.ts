@@ -35,3 +35,22 @@ export function verifyToken(token: string, now = Date.now()): string | null {
     return null
   }
 }
+
+// Unsubscribe links in emails sent one at a time (the welcome email). They don't
+// expire, and are signed separately so a confirmation token can't be reused.
+const signUnsub = (payload: string) => createHmac('sha256', secret()).update(`unsubscribe:${payload}`).digest('base64url')
+
+export function createUnsubscribeToken(email: string) {
+  const payload = b64(email)
+  return `${payload}.${signUnsub(payload)}`
+}
+
+export function verifyUnsubscribeToken(token: string): string | null {
+  const [payload, sig] = token.split('.')
+  if (!payload || !sig) return null
+  const expected = Buffer.from(signUnsub(payload))
+  const given = Buffer.from(sig)
+  if (expected.length !== given.length || !timingSafeEqual(expected, given)) return null
+  const email = Buffer.from(payload, 'base64url').toString('utf8')
+  return email.includes('@') ? email : null
+}

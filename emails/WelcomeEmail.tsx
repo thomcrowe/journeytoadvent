@@ -4,15 +4,16 @@ import { s } from './theme'
 
 export interface WelcomeEmailProps {
   siteUrl: string
+  unsubscribeUrl?: string
   startLabel: string // "Sunday, November 29"
   midSeason?: { dayNumber: number; dayUrl: string; seasonUrl: string }
 }
 
-export default function WelcomeEmail({ siteUrl, startLabel, midSeason }: WelcomeEmailProps) {
+export default function WelcomeEmail({ siteUrl, unsubscribeUrl, startLabel, midSeason }: WelcomeEmailProps) {
   // "Sunday, November 29" -> "November 29"
   const startDay = startLabel.replace(/^[A-Za-z]+, /, '')
   return (
-    <Shell preview="Welcome to Journey to Advent" siteUrl={siteUrl} unsubscribe>
+    <Shell preview="Welcome to Journey to Advent" siteUrl={siteUrl} unsubscribe unsubscribeUrl={unsubscribeUrl}>
       <Text style={s.h1}>Welcome to the Advent Journey</Text>
       {midSeason ? (
         <>
