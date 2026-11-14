@@ -58,5 +58,12 @@ export const hymn = defineType({
     defineField({ name: 'defaultRecording', type: 'recording' }),
   ],
   orderings: [{ title: 'Title', name: 'titleAsc', by: [{ field: 'title', direction: 'asc' }] }],
-  preview: { select: { title: 'title', subtitle: 'tune' } },
+  preview: {
+    select: { title: 'title', tune: 'tune', label: 'defaultRecording.label', secs: 'defaultRecording.durationSeconds', id: 'defaultRecording.youtubeId' },
+    prepare: ({ title, tune, label, secs, id }) => {
+      const length = typeof secs === 'number' ? `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}` : null
+      const recording = id ? [label || 'Recording', length].filter(Boolean).join(' · ') : 'No recording yet'
+      return { title, subtitle: [tune, recording].filter(Boolean).join(' — ') }
+    },
+  },
 })
