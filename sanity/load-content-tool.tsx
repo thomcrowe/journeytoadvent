@@ -43,6 +43,10 @@ function LoadContent() {
   const [state, setState] = useState<State>({ kind: 'idle' })
 
   const [version, setVersion] = useState(0)
+  const [overrides, setOverrides] = useState<number | null>(null)
+  const [clearState, setClearState] = useState<State>({ kind: 'idle' })
+  // Drafts and published documents both, so a cleared override stays cleared.
+  const raw = useMemo(() => client.withConfig({ perspective: 'raw' }), [client])
 
   useEffect(() => {
     let alive = true
@@ -50,10 +54,14 @@ function LoadContent() {
       .fetch<Counts>(COUNTS)
       .then((c) => alive && setCounts(c))
       .catch(() => alive && setCounts(null))
+    raw
+      .fetch<number>(`count(*[_type == "entry" && defined(recordingOverride)])`)
+      .then((n) => alive && setOverrides(n))
+      .catch(() => alive && setOverrides(null))
     return () => {
       alive = false
     }
-  }, [client, version])
+  }, [client, raw, version])
 
   const run = async () => {
     setState({ kind: 'loading' })
@@ -88,6 +96,20 @@ function LoadContent() {
       setVersion((v) => v + 1)
     } catch (err) {
       setState({ kind: 'error', message: err instanceof Error ? err.message : String(err) })
+    }
+  }
+
+  const clearOverrides = async () => {
+    setClearState({ kind: 'loading' })
+    try {
+      const ids = await raw.fetch<string[]>(`*[_type == "entry" && defined(recordingOverride)]._id`)
+      const tx = raw.transaction()
+      for (const id of ids) tx.patch(id, (patch) => patch.unset(['recordingOverride']))
+      const res = await tx.commit({ visibility: 'sync' })
+      setClearState({ kind: 'done', tx: res.transactionId })
+      setVersion((v) => v + 1)
+    } catch (err) {
+      setClearState({ kind: 'error', message: err instanceof Error ? err.message : String(err) })
     }
   }
 
@@ -126,6 +148,23 @@ function LoadContent() {
           Something went wrong: {state.message}
         </p>
       )}
+
+      <h2 style={{ fontSize: 18, margin: '32px 0 8px' }}>Clear day recording overrides</h2>
+      <p>
+        Each hymn&rsquo;s own recording plays on its days. A day&rsquo;s &ldquo;Recording override&rdquo; replaces it for that one day. This
+        empties the override on every day, in drafts and published entries, so every day plays its hymn&rsquo;s recording.
+      </p>
+      <p style={{ opacity: 0.8 }}>Days with an override now: {overrides ?? 'checking…'}</p>
+      <button
+        type="button"
+        style={{ ...button, background: '#6b4fbb', opacity: clearState.kind === 'loading' || !overrides ? 0.6 : 1 }}
+        disabled={clearState.kind === 'loading' || !overrides}
+        onClick={clearOverrides}
+      >
+        {clearState.kind === 'loading' ? 'Clearing…' : 'Clear all recording overrides'}
+      </button>
+      {clearState.kind === 'done' && <p style={{ marginTop: 16 }}>Done. Every day now uses its hymn&rsquo;s recording.</p>}
+      {clearState.kind === 'error' && <p style={{ marginTop: 16, color: '#e5484d' }}>Something went wrong: {clearState.message}</p>}
 
       {notes.length > 0 && (
         <details style={{ marginTop: 24 }}>
