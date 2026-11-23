@@ -16,7 +16,7 @@ export default async function SiteLayout({ children }: LayoutProps<'/'>) {
       <main id="main" className="flex-1">
         {children}
       </main>
-      <SubscribeBand totalDays={total} />
+      <SubscribeBand />
       <SiteFooter />
       {draft && <VisualEditing />}
     </div>
